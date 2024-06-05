@@ -17,14 +17,15 @@ class LoginScreen extends StatelessWidget {
       appBar: AppBar(
         title: const Text("Yoe Code"),
       ),
-      body: Column(
-        children: [
-          ListTile(
-            title: const Text("Gym"),
+      body: ListView.builder(
+        itemCount: listTalks.length,
+        itemBuilder: (context, index) {
+          return ListTile(
+            title: Text(listTalks[index]),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {},
-          )
-        ],
+          );
+        },
       ),
     );
   }
