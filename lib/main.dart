@@ -10,15 +10,16 @@ class MyApp extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
+      debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "/",
+      initialRoute: "login",
     );
   }
 
   Map<String, WidgetBuilder> _getRoutes() {
     return {
       "/": (context) => const HomePage(key: Key('homePageKey')),
-      "login": (context) => const LoginPage(key: Key('loginPageKey')),
+      "login": (context) => const LoginScreen(key: Key('loginPageKey')),
     };
   }
 }
