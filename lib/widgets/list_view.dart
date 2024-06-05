@@ -1,25 +1,20 @@
 import 'package:flutter/material.dart';
+import 'package:update_flutter/data/db_fake.dart';
 
 class ListViewScreen extends StatelessWidget {
   const ListViewScreen({super.key});
 
   @override
   Widget build(BuildContext context) {
-    List listBook = [
-      "Book 1",
-      "Book 2",
-      "Book 3",
-      "Book 4",
-      "Book 5",
-    ];
+
     return Scaffold(
       appBar: AppBar(
         title: const Text("List View Code"),
       ),
       body: ListView.builder(
-        itemCount: listBook.length,
+        itemCount: animeList.length,
         itemBuilder: (context, index) {
-          String talk = listBook[index];
+          String talk = animeList[index];
           return Container(
             color: index % 2 == 0 ? Colors.black12 : Colors.white,
             child: ListTile(
