@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/pages/one.dart';
+import 'package:update_flutter/widgets/one.dart';
 
 void main() => runApp(const MyApp());
 
