@@ -6,4 +6,11 @@ List<String> animeList = [
   "My Hero Academia",
   "Black Clover",
   "Demon Slayer",
+  "Demon Slayer",
+  "Demon Slayer",
+  "Demon Slayer",
+  "Demon Slayer",
+  "Lucas 124",
+  "Lucas 125",
+  "Lucas 126",
 ];
