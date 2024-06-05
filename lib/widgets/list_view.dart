@@ -20,10 +20,13 @@ class ListViewScreen extends StatelessWidget {
         itemCount: listBook.length,
         itemBuilder: (context, index) {
           String talk = listBook[index];
-          return ListTile(
-            leading: const Icon(Icons.arrow_back_ios),
-            title: Text(talk),
-            trailing: const Icon(Icons.alarm),
+          return Container(
+            color: index % 2 == 0 ? Colors.black12 : Colors.white,
+            child: ListTile(
+              leading: const Icon(Icons.arrow_back_ios),
+              title: Text(talk),
+              trailing: const Icon(Icons.alarm),
+            ),
           );
         },
       ),
