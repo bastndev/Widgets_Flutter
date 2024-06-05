@@ -23,6 +23,7 @@ class ListViewScreen extends StatelessWidget {
           return ListTile(
             leading: const Icon(Icons.arrow_back_ios),
             title: Text(talk),
+            trailing: const Icon(Icons.alarm),
           );
         },
       ),
