@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/widgets/one.dart';
 import 'package:update_flutter/widgets/two.dart';
 
 void main() => runApp(const MyApp());
@@ -12,14 +11,13 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "login",
+      initialRoute: "/",
     );
   }
 
   Map<String, WidgetBuilder> _getRoutes() {
     return {
-      "/": (context) => const HomePage(key: Key('homePageKey')),
-      "login": (context) => const LoginScreen(key: Key('loginPageKey')),
+      "/": (context) => const LoginScreen(key: Key('LoginScreenKey')),
     };
   }
 }
