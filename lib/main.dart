@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/widgets/list_view.dart';
 import 'package:update_flutter/widgets/list_view_opacity_gradient.dart';
-import 'package:update_flutter/widgets/statefull_widget.dart';
+import 'package:update_flutter/widgets/stateful_widget.dart';
 import 'package:update_flutter/widgets/stateless_widget.dart';
 import 'package:update_flutter/widgets/yoe_code.dart';
 

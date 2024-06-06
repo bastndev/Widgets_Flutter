@@ -8,12 +8,13 @@ class FulScreen extends StatefulWidget {
   State<FulScreen> createState() => _FulScreenState();
 }
 
+// don't be afraid to use stateful widget if you need to change the state of the widget
 class _FulScreenState extends State<FulScreen> {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Center(
-        child: Text('FullScreen'),
+        child: Text('FulScreen 22'),
       ),
     );
   }
