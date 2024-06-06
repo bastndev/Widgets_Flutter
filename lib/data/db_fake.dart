@@ -1,16 +1,17 @@
-List<String> animeList = [
-  "Naruto 2",
+List<String> animeList = {
+  "Naruto: Shippuden",
   "One Piece",
-  "Bleach",
   "Attack on Titan",
   "My Hero Academia",
   "Black Clover",
   "Demon Slayer",
-  "Demon Slayer",
-  "Demon Slayer",
-  "Demon Slayer",
-  "Demon Slayer",
-  "Lucas 124",
-  "Lucas 125",
-  "Lucas 126",
-];
+  "Jujutsu Kaisen",
+  "Tokyo Revengers",
+  "Chainsaw Man",
+  "Boruto: Naruto Next Generations",
+  "Hunter x Hunter",
+  "Fullmetal Alchemist: Brotherhood",
+  "Death Note",
+  "One Punch Man",
+  "Dragon Ball Z",
+}.toList();
