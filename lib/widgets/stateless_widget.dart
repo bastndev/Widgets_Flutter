@@ -14,16 +14,21 @@ class LessScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: const Column(
-        children: [
-          TextField(
-            decoration: InputDecoration(
-              hintText: 'Enter your name',
-              labelText: 'Name',
-            ),
-          )
-        ],
+      body: const Center(
+        child: MyStatelessWidget(),
       ),
+    );
+  }
+}
+
+class MyStatelessWidget extends StatelessWidget {
+  const MyStatelessWidget({super.key});
+
+  @override
+  Widget build(BuildContext context) {
+    return const Text(
+      'Hello, I am a StatelessWidget!',
+      style: TextStyle(fontSize: 24),
     );
   }
 }
