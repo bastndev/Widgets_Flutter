@@ -15,24 +15,22 @@ class _FulScreenState extends State<FulScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: SafeArea(
-        child: Padding(
-          padding: const EdgeInsets.all(140.0),
-          child: Column(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              Text(name),
-              ElevatedButton(
-                onPressed: () {
-                  setState(() {
-                    name = "John";
-                  });
-                },
-                child: const Text("Click me"),
-              )
-            ],
-          ),
-        ),
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: const Text('FulScreen'),
+      ),
+      body: Column(
+        children: [
+          Text(name),
+          ElevatedButton(
+            onPressed: () {
+              setState(() {
+                name = "John";
+              });
+            },
+            child: const Text("Click me"),
+          )
+        ],
       ),
     );
   }
