@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/data/db_fake.dart';
+import 'package:update_flutter/widgets/home_screen.dart';
 
 class ListViewGradientScreen extends StatelessWidget {
   const ListViewGradientScreen({super.key});
@@ -17,7 +18,7 @@ class ListViewGradientScreen extends StatelessWidget {
           double opacity = 1 - (index / animeList.length);
 
           return Container(
-            color: Colors.blue.withOpacity(opacity),
+            color: Colors.orange.withOpacity(opacity),
             child: ListTile(
               leading: const Icon(Icons.arrow_forward_ios),
               title: Text(talk),
@@ -25,6 +26,14 @@ class ListViewGradientScreen extends StatelessWidget {
                 Icons.photo_size_select_actual_rounded,
                 color: Colors.black,
               ),
+              onTap: () {
+                Navigator.push(
+                  context,
+                  MaterialPageRoute(
+                    builder: (context) => const HomeScreen(),
+                  ),
+                );
+              },
             ),
           );
         },
