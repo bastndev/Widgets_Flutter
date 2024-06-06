@@ -8,7 +8,7 @@ class ListViewGradientScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text("List View Code"),
+        title: const Text("List View Anime"),
       ),
       body: ListView.builder(
         itemCount: animeList.length,
@@ -17,11 +17,14 @@ class ListViewGradientScreen extends StatelessWidget {
           double opacity = 1 - (index / animeList.length);
 
           return Container(
-            color: Colors.purple.withOpacity(opacity),
+            color: Colors.blue.withOpacity(opacity),
             child: ListTile(
-              leading: const Icon(Icons.arrow_back_ios),
+              leading: const Icon(Icons.arrow_forward_ios),
               title: Text(talk),
-              trailing: const Icon(Icons.alarm),
+              trailing: const Icon(
+                Icons.photo_size_select_actual_rounded,
+                color: Colors.black,
+              ),
             ),
           );
         },
