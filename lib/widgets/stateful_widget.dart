@@ -25,7 +25,7 @@ class _FulScreenState extends State<FulScreen> {
           ElevatedButton(
             onPressed: () {
               setState(() {
-                name = "John";
+                name = "John 2";
               });
             },
             child: const Text("Click me"),

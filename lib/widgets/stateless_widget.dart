@@ -6,9 +6,23 @@ class LessScreen extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('LessScreen'),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.orange,
+        title: const Text(
+          'StatelessWidget',
+          style: TextStyle(color: Colors.white),
+        ),
+      ),
+      body: const Column(
+        children: [
+          TextField(
+            decoration: InputDecoration(
+              hintText: 'Enter your name',
+              labelText: 'Name',
+            ),
+          )
+        ],
       ),
     );
   }
