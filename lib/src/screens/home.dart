@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/src/components/search.dart';
+import 'package:update_flutter/src/components/practice_search.dart';
+// import 'package:update_flutter/src/components/search.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -9,7 +10,10 @@ class HomeScreen extends StatelessWidget {
     return const Scaffold(
       body: Column(
         children: [
-          Search(),
+          SafeArea(
+            // Search(),
+            child: PracticeSearch(),
+          ),
         ],
       ),
     );
