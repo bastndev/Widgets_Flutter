@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/data/db_fake.dart';
+import 'package:update_flutter/src/utils/db_fake.dart';
 
 class ListViewScreen extends StatelessWidget {
   const ListViewScreen({super.key});

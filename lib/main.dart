@@ -11,7 +11,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "search",
+      initialRoute: "home",
     );
   }
 
@@ -26,6 +26,7 @@ class MyApp extends StatelessWidget {
       "ful": (context) => const FulScreen(key: Key('stateFulKey')),
       "save": (context) => const SaveTextScreen(key: Key('saveTextKey')),
       "search": (context) => const SearchScreen(key: Key('saveTextKey')),
+      "home": (context) => const HomeScreen(key: Key('saveTextKey')),
     };
   }
 }

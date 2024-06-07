@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/data/db_fake.dart';
-import 'package:update_flutter/widgets/home_screen.dart';
+import 'package:update_flutter/src/utils/db_fake.dart';
+// import 'package:update_flutter/widgets/home_screen.dart';
 
 class ListViewGradientScreen extends StatelessWidget {
   const ListViewGradientScreen({super.key});
@@ -27,12 +27,12 @@ class ListViewGradientScreen extends StatelessWidget {
                 color: Colors.black,
               ),
               onTap: () {
-                Navigator.push(
-                  context,
-                  MaterialPageRoute(
-                    builder: (context) => const HomeScreen(),
-                  ),
-                );
+                // Navigator.push(
+                //   context,
+                //   MaterialPageRoute(
+                //     builder: (context) => const HomeScreen(),
+                //   ),
+                // );
               },
             ),
           );
