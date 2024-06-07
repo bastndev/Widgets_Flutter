@@ -1,3 +1,5 @@
+// ignore_for_file: avoid_print
+
 import 'package:flutter/material.dart';
 
 class SaveTextScreen extends StatefulWidget {
@@ -18,31 +20,39 @@ class _FulScreenState extends State<SaveTextScreen> {
         backgroundColor: Colors.blueGrey,
         title: const Text('Save Text'),
       ),
-      body: Column(
-        children: [
-          TextFormField(
-            controller: nameController,
-            decoration: const InputDecoration(
-              labelText: 'Name',
+      body: Padding(
+        padding: const EdgeInsets.all(15.0),
+        child: Column(
+          children: [
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: TextFormField(
+                controller: nameController,
+                decoration: const InputDecoration(
+                  labelText: 'Name',
+                ),
+              ),
             ),
-          ),
-          const SizedBox(height: 10),
-          TextFormField(
-            controller: idController,
-            decoration: const InputDecoration(
-              labelText: 'Description',
+            const SizedBox(height: 10),
+            Padding(
+              padding: const EdgeInsets.all(15.0),
+              child: TextFormField(
+                controller: idController,
+                decoration: const InputDecoration(
+                  labelText: 'Description',
+                ),
+              ),
             ),
-          ),
-          ElevatedButton(
-            onPressed: () {
-              final name = nameController.text;
-              final id = idController.text;
-              print('Name: $name');
-              print('ID: $id');
-            },
-            child: const Text('Save '),
-          ),
-        ],
+            ElevatedButton(
+              onPressed: () {
+                final name = nameController.text;
+                final id = idController.text;
+                print('Name: $name, id: $id');
+              },
+              child: const Text('Save now'),
+            ),
+          ],
+        ),
       ),
     );
   }
