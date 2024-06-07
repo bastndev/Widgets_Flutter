@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:update_flutter/src/components/search.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -6,8 +7,10 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Scaffold(
-      body: Center(
-        child: Text('HomeScreen'),
+      body: Column(
+        children: [
+          Search(),
+        ],
       ),
     );
   }
