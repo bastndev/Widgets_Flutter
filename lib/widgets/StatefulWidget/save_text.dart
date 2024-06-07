@@ -8,11 +8,41 @@ class SaveTextScreen extends StatefulWidget {
 }
 
 class _FulScreenState extends State<SaveTextScreen> {
+  final nameController = TextEditingController(); //-FIXME: that is a variable
+  final idController = TextEditingController();
+
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('SaveTextScreen'),
+    return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blueGrey,
+        title: const Text('Save Text'),
+      ),
+      body: Column(
+        children: [
+          TextFormField(
+            controller: nameController,
+            decoration: const InputDecoration(
+              labelText: 'Name',
+            ),
+          ),
+          const SizedBox(height: 10),
+          TextFormField(
+            controller: idController,
+            decoration: const InputDecoration(
+              labelText: 'Description',
+            ),
+          ),
+          ElevatedButton(
+            onPressed: () {
+              final name = nameController.text;
+              final id = idController.text;
+              print('Name: $name');
+              print('ID: $id');
+            },
+            child: const Text('Save '),
+          ),
+        ],
       ),
     );
   }
