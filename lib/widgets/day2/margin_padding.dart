@@ -5,11 +5,13 @@ class MarginPadding extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    double screenWidth = MediaQuery.of(context).size.width;
+
     return Center(
       child: Container(
-        margin: const EdgeInsets.all(16.0), // Margen externo
-        padding: const EdgeInsets.all(8.0), // Padding interno
-        color: Colors.blue,
+        margin: EdgeInsets.only(top: 20, left: screenWidth * 0.6),
+        padding: const EdgeInsets.only(top: 10, bottom: 0, left: 20, right: 20),
+        color: Colors.orange,
         child: const Text(
           'Text with padding y margin',
           style: TextStyle(color: Colors.white),
