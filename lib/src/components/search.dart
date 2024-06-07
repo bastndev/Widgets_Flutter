@@ -14,7 +14,7 @@ class Search extends StatelessWidget {
             fillColor: Color(0xFFebe8d6),
             hintText: "Search ",
             prefixIcon: Icon(Icons.search),
-            suffixIcon: Icon(Icons.color_lens),
+            // suffixIcon: Icon(Icons.mic),
             border: OutlineInputBorder(
               borderRadius: BorderRadius.all(
                 Radius.circular(50.0),
