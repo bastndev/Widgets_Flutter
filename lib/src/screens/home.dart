@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/widgets/day2/margin_padding.dart';
-// import 'package:update_flutter/src/components/practice_search.dart';
+// import 'package:update_flutter/widgets/day2/margin_padding.dart';
+import 'package:update_flutter/src/components/practice_search.dart';
 // import 'package:update_flutter/src/components/search.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -13,8 +13,8 @@ class HomeScreen extends StatelessWidget {
         children: [
           SafeArea(
             // Search(),
-            // child: PracticeSearch(),
-            child: MarginPadding(),
+            child: PracticeSearch(),
+            // child: MarginPadding(),
           ),
         ],
       ),
