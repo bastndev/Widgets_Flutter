@@ -7,3 +7,6 @@ export 'package:update_flutter/widgets/yoe_code.dart';
 export 'package:update_flutter/widgets/day1/search.dart';
 export 'package:update_flutter/src/components/search.dart';
 export 'package:update_flutter/src/screens/home.dart';
+
+export 'package:update_flutter/src/screens/widget/columns.dart';
+export 'package:update_flutter/src/screens/widget/stack.dart';

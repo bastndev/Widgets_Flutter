@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/export.dart';
 import 'package:update_flutter/src/screens/home_widgets_test.dart';
-import 'package:update_flutter/src/screens/widget/columns.dart';
+
+
 
 void main() => runApp(const MyApp());
 
@@ -13,7 +14,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "homeWidgets",
+      initialRoute: "stack",
     );
   }
 
@@ -31,6 +32,7 @@ class MyApp extends StatelessWidget {
       "home": (context) => const HomeScreen(key: Key('saveTextKey')),
       "columns": (context) => const Columns(key: Key('columnsKey')),
       "homeWidgets": (context) => const HomeWidgets(key: Key('homeWidgetsKey')),
+      "stack": (context) => const StackPractice(key: Key('stackKey')),
     };
   }
 }
