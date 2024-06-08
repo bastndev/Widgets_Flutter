@@ -3,12 +3,39 @@ import 'package:flutter/material.dart';
 class StackPractice extends StatelessWidget {
   const StackPractice({super.key});
 
-  
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
+    return Scaffold(
+      appBar: AppBar(
+        title: const Text('Stack Practice'),
+      ),
       body: Center(
-        child: Text('StackPractice'),
+        child: Column(
+          mainAxisAlignment: MainAxisAlignment.center,
+          crossAxisAlignment: CrossAxisAlignment.center,
+          children: <Widget>[
+            Stack(
+              alignment: Alignment.center,
+              children: <Widget>[
+                Container(
+                  color: Colors.red,
+                  height: 300,
+                  width: 300,
+                ),
+                Container(
+                  color: Colors.purple,
+                  height: 200,
+                  width: 200,
+                ),
+                Container(
+                  color: Colors.blue,
+                  height: 100,
+                  width: 100,
+                ),
+              ],
+            ),
+          ],
+        ),
       ),
     );
   }
