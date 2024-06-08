@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "columns",
+      initialRoute: "homeWidgets",
     );
   }
 
