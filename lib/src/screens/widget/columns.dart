@@ -7,13 +7,18 @@ class Columns extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const Column(
-      mainAxisAlignment: MainAxisAlignment.start,
-      // crossAxisAlignment: CrossAxisAlignment.end,
+      mainAxisAlignment: MainAxisAlignment.end,
+      mainAxisSize: MainAxisSize.max,
+      verticalDirection: VerticalDirection.up,
+
+      crossAxisAlignment: CrossAxisAlignment.stretch,
+
+      
       children: [
         Box(
           color: Colors.red,
-          number: 4,
-          broad: 100.0,
+          number: 1,
+          broad: 100.0
         ),
         Box(
           color: Colors.blue,
