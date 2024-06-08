@@ -1,8 +1,5 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/export.dart';
-import 'package:update_flutter/src/screens/home_widgets_test.dart';
-
-
 
 void main() => runApp(const MyApp());
 
@@ -29,9 +26,7 @@ class MyApp extends StatelessWidget {
       "ful": (context) => const FulScreen(key: Key('stateFulKey')),
       "save": (context) => const SaveTextScreen(key: Key('saveTextKey')),
       "search": (context) => const SearchScreen(key: Key('saveTextKey')),
-      "home": (context) => const HomeScreen(key: Key('saveTextKey')),
       "columns": (context) => const Columns(key: Key('columnsKey')),
-      "homeWidgets": (context) => const HomeWidgets(key: Key('homeWidgetsKey')),
       "stack": (context) => const StackPractice(key: Key('stackKey')),
     };
   }

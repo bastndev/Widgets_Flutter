@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/src/screens/widget/box.dart';
+import 'package:update_flutter/src/utils/box.dart';
 
 class Columns extends StatelessWidget {
   const Columns({super.key});

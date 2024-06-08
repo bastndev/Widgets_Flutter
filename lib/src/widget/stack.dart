@@ -18,7 +18,7 @@ class StackPractice extends StatelessWidget {
               alignment: Alignment.center,
               children: <Widget>[
                 Container(
-                  color: Colors.red,
+                  color: Colors.orange,
                   height: 300,
                   width: 300,
                 ),
