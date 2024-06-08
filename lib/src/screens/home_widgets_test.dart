@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/src/screens/widget/columns.dart';
+// import 'package:update_flutter/src/screens/widget/columns.dart';
+import 'package:update_flutter/src/screens/widget/row.dart';
 
 class HomeWidgets extends StatefulWidget {
   const HomeWidgets({super.key});
@@ -14,12 +15,14 @@ class _FulScreenState extends State<HomeWidgets> {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       home: Scaffold(
-        body: Container(
-          width: double.infinity,
-          color: Colors.black,
-          child: const Columns(),
+        body: SafeArea(
+          child: Container(
+            width: double.infinity,
+            color: Colors.black,
+            // child: const Columns(),
+            child: const RowPractice(),
+          ),
         ),
-        
       ),
     );
   }
