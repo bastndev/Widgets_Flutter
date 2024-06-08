@@ -12,6 +12,7 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return const Scaffold(
       body: Column(
+        // mainAxisAlignment: MainAxisAlignment.center,
         children: [
           SafeArea(
             // Search(),

@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/export.dart';
+import 'package:update_flutter/src/screens/home_widgets_test.dart';
+import 'package:update_flutter/src/screens/widget/columns.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +13,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "home",
+      initialRoute: "columns",
     );
   }
 
@@ -27,6 +29,8 @@ class MyApp extends StatelessWidget {
       "save": (context) => const SaveTextScreen(key: Key('saveTextKey')),
       "search": (context) => const SearchScreen(key: Key('saveTextKey')),
       "home": (context) => const HomeScreen(key: Key('saveTextKey')),
+      "columns": (context) => const Columns(key: Key('columnsKey')),
+      "homeWidgets": (context) => const HomeWidgets(key: Key('homeWidgetsKey')),
     };
   }
 }
