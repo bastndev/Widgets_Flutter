@@ -16,6 +16,12 @@ class HomeScreen extends StatelessWidget {
             child: PracticeSearch(),
             // child: MarginPadding(),
           ),
+          TextField(
+            decoration: InputDecoration(
+              border: OutlineInputBorder(),
+              labelText: 'write here',
+            ),
+          ),
         ],
       ),
     );

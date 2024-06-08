@@ -4,17 +4,20 @@ class PracticeSearch extends StatefulWidget {
   const PracticeSearch({super.key});
 
   @override
-  State<PracticeSearch> createState() => _FulScreenState();
+  State<PracticeSearch> createState() => _PracticeSearchState();
 }
 
-class _FulScreenState extends State<PracticeSearch> {
+class _PracticeSearchState extends State<PracticeSearch> {
   final TextEditingController _controller = TextEditingController();
+  final FocusNode _focusNode = FocusNode();
   bool _showXButton = false;
+  bool _isFocused = false;
 
   @override
   void initState() {
     super.initState();
     _controller.addListener(_handleTextChanged);
+    _focusNode.addListener(_handleFocusChange);
   }
 
   void _handleTextChanged() {
@@ -23,10 +26,18 @@ class _FulScreenState extends State<PracticeSearch> {
     });
   }
 
+  void _handleFocusChange() {
+    setState(() {
+      _isFocused = _focusNode.hasFocus;
+    });
+  }
+
   @override
   void dispose() {
     _controller.removeListener(_handleTextChanged);
+    _focusNode.removeListener(_handleFocusChange);
     _controller.dispose();
+    _focusNode.dispose();
     super.dispose();
   }
 
@@ -36,10 +47,11 @@ class _FulScreenState extends State<PracticeSearch> {
       padding: const EdgeInsets.all(15.0),
       child: TextField(
         controller: _controller,
+        focusNode: _focusNode,
         decoration: InputDecoration(
           filled: true,
           fillColor: const Color(0xFFebe8d6),
-          prefixIcon: const Icon(Icons.search),
+          prefixIcon: Icon(_isFocused ? Icons.arrow_back : Icons.search),
           suffixIcon: _showXButton
               ? IconButton(
                   icon: const Icon(Icons.close),
@@ -55,6 +67,7 @@ class _FulScreenState extends State<PracticeSearch> {
           ),
         ),
       ),
+      
     );
   }
 }
