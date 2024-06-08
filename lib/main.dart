@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/export.dart';
+import 'package:update_flutter/src.dart';
+import 'package:update_flutter/src/home.dart';
 
 void main() => runApp(const MyApp());
 
@@ -11,7 +12,7 @@ class MyApp extends StatelessWidget {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
       routes: _getRoutes(),
-      initialRoute: "stack",
+      initialRoute: "home",
     );
   }
 
@@ -28,6 +29,7 @@ class MyApp extends StatelessWidget {
       "search": (context) => const SearchScreen(key: Key('saveTextKey')),
       "columns": (context) => const Columns(key: Key('columnsKey')),
       "stack": (context) => const StackPractice(key: Key('stackKey')),
+      "home": (context) => const HomeScreen(key: Key('HomeScreenKey')),
     };
   }
 }
