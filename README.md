@@ -1,4 +1,4 @@
-# Widgets de Flutter | spanish
+# Widgets de Flutter | spanish 💙
 
 Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfaces de usuario atractivas y funcionales. A continuación, se presentan algunos de los widgets más utilizados:
 
