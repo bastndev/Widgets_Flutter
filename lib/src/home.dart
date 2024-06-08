@@ -7,7 +7,11 @@ class HomeScreen extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Text('Stack Practice'),
+        backgroundColor: Colors.black,
+        title: const Text(
+          'Stack Widgets 💙',
+          style: TextStyle(color: Colors.white),
+        ),
       ),
       body: ListView(
         children: const [
