@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 // import 'package:update_flutter/widgets/day2/margin_padding.dart';
 import 'package:update_flutter/src/components/practice_search.dart';
+import 'package:update_flutter/src/screens/widget/columns.dart';
 import 'package:update_flutter/widgets/day3/change_icon.dart';
 // import 'package:update_flutter/src/components/search.dart';
 
@@ -25,7 +26,8 @@ class HomeScreen extends StatelessWidget {
             ),
           ), */
           // -TODO: practice change icon 
-          ChangeIcon()
+          ChangeIcon(),
+          Columns(),
         ],
       ),
     );
