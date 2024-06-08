@@ -11,7 +11,7 @@ class FulScreen extends StatefulWidget {
 // don't be afraid to use stateful widget if you need to change the state of the widget
 class _FulScreenState extends State<FulScreen> {
   String name = "Maria"; // variable to change the state of the widget
-  // In this is space you can change variables and methods
+  // In this is space you can change variables and methods 
 
   @override
   Widget build(BuildContext context) {
