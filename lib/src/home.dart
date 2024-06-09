@@ -39,6 +39,9 @@ class HomeScreen extends StatelessWidget {
                 Navigator.pushNamed(context, 'stack');
               },
             ),
+            const Text("Hello World!"),
+            const Text("Hello World!"),
+            const Text("Hello World!"),
           ],
         ));
   }

@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
-class StackPractice extends StatelessWidget {
-  const StackPractice({super.key});
+class StackWidget extends StatelessWidget {
+  const StackWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:update_flutter/src.dart';
-import 'package:update_flutter/src/home.dart';
-import 'package:update_flutter/src/widgets/row.dart';
+import 'package:update_flutter/src/routes/pages.dart';
+import 'package:update_flutter/src/routes/routes.dart';
 
 void main() => runApp(const MyApp());
 
@@ -12,26 +11,8 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       debugShowCheckedModeBanner: false,
-      routes: _getRoutes(),
-      initialRoute: "home",
+      initialRoute: Routes.home,
+      routes: Pages.route,
     );
-  }
-
-  Map<String, WidgetBuilder> _getRoutes() {
-    return {
-      "/": (context) => const LoginScreen(key: Key('LoginScreenKey')),
-      "listView": (context) =>
-          const ListViewScreen(key: Key('ListViewScreenKey')),
-      "lVGradient": (context) =>
-          const ListViewGradientScreen(key: Key('opacityGradientKey')),
-      "less": (context) => const LessScreen(key: Key('stateLessKey')),
-      "ful": (context) => const FulScreen(key: Key('stateFulKey')),
-      "save": (context) => const SaveTextScreen(key: Key('saveTextKey')),
-      "search": (context) => const SearchScreen(key: Key('saveTextKey')),
-      "columns": (context) => const Columns(key: Key('columnsKey')),
-      "stack": (context) => const StackPractice(key: Key('stackKey')),
-      "home": (context) => const HomeScreen(key: Key('HomeScreenKey')),
-      "row": (context) => const RowPractice(key: Key('rowKey')),
-    };
   }
 }
