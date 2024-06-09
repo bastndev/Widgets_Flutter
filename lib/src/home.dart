@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
               title: const Text('Column'),
               trailing: const Icon(Icons.arrow_forward_ios),
               onTap: () {
-                Navigator.pushNamed(context, 'columns');
+                Navigator.pushNamed(context, 'column');
               },
             ),
             ListTile(
