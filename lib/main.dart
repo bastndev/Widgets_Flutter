@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/src.dart';
 import 'package:update_flutter/src/home.dart';
+import 'package:update_flutter/src/widgets/row.dart';
 
 void main() => runApp(const MyApp());
 
@@ -30,6 +31,7 @@ class MyApp extends StatelessWidget {
       "columns": (context) => const Columns(key: Key('columnsKey')),
       "stack": (context) => const StackPractice(key: Key('stackKey')),
       "home": (context) => const HomeScreen(key: Key('HomeScreenKey')),
+      "row": (context) => const RowPractice(key: Key('rowKey')),
     };
   }
 }

@@ -1,4 +1,4 @@
-List<String> widgets = [
+List<String> widgetsName = [
   "Container",
   "Row",
   "Column",

@@ -6,18 +6,40 @@ class HomeScreen extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(
-        backgroundColor: Colors.black,
-        title: const Text(
-          'Stack Widgets 💙',
-          style: TextStyle(color: Colors.white),
+        appBar: AppBar(
+          backgroundColor: Colors.black,
+          title: const Text(
+            'Stack Widgets 💙',
+            style: TextStyle(color: Colors.white),
+          ),
         ),
-      ),
-      body: ListView(
-        children: const [
-          Text("Testing 4"),
-        ],
-      ),
-    );
+        body: ListView(
+          children: [
+            ListTile(
+              leading: const Icon(Icons.star),
+              title: const Text('Column'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, 'columns');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.star),
+              title: const Text('Row'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, 'row');
+              },
+            ),
+            ListTile(
+              leading: const Icon(Icons.star),
+              title: const Text('Stack'),
+              trailing: const Icon(Icons.arrow_forward_ios),
+              onTap: () {
+                Navigator.pushNamed(context, 'stack');
+              },
+            ),
+          ],
+        ));
   }
 }
