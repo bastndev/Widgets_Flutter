@@ -39,6 +39,14 @@ class HomeScreen extends StatelessWidget {
               Navigator.pushNamed(context, '/stack');
             },
           ),
+          ListTile(
+            leading: const Icon(Icons.star),
+            title: const Text('List View'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.pushNamed(context, '/listView');
+            },
+          ),
         ],
       ),
     );
