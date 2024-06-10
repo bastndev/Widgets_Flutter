@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/src/utils/box.dart';
 
-class RowPractice extends StatelessWidget {
-  const RowPractice({super.key});
+class RowWidget extends StatelessWidget {
+  const RowWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
