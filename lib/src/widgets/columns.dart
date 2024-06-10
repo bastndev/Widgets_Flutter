@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/src/utils/box.dart';
 
-class Columns extends StatelessWidget {
-  const Columns({super.key});
+class ColumnWidget extends StatelessWidget {
+  const ColumnWidget({super.key});
 
   @override
   Widget build(BuildContext context) {

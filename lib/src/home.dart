@@ -20,7 +20,7 @@ class HomeScreen extends StatelessWidget {
             title: const Text('Column'),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
-              Navigator.pushNamed(context, 'column');
+              Navigator.pushNamed(context, '/column');
             },
           ),
           ListTile(
@@ -28,7 +28,7 @@ class HomeScreen extends StatelessWidget {
             title: const Text('Row'),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
-              Navigator.pushNamed(context, 'row');
+              Navigator.pushNamed(context, '/row');
             },
           ),
           ListTile(
@@ -36,7 +36,7 @@ class HomeScreen extends StatelessWidget {
             title: const Text('Stack'),
             trailing: const Icon(Icons.arrow_forward_ios),
             onTap: () {
-              Navigator.pushNamed(context, 'stack');
+              Navigator.pushNamed(context, '/stack');
             },
           ),
         ],
