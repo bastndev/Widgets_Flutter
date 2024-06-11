@@ -1,5 +1,6 @@
 // pages.dart
 import 'package:flutter/material.dart';
+import 'package:update_flutter/practice/practice.dart';
 import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
 
@@ -15,5 +16,6 @@ abstract class Pages {
     Routes.row:      (BuildContext context) => const RowWidget(),
     Routes.stack:    (BuildContext context) => const StackWidget(),
     Routes.listView: (BuildContext context) => const ListViewWidget(),
+    Routes.practice: (BuildContext context) => const Practice(),
   };
 }
