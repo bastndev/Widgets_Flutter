@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:update_flutter/practice/listview/listview.dart';
 import 'package:update_flutter/practice/listview/listview_builder.dart';
 import 'package:update_flutter/practice/listview/listview_custom.dart';
 import 'package:update_flutter/practice/listview/listview_separated.dart';
@@ -53,6 +54,19 @@ class Practice extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const ListViewSeparated(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.breakfast_dining_sharp),
+            title: const Text('ListView Practice'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const ListviewPractice(),
                 ),
               );
             },
