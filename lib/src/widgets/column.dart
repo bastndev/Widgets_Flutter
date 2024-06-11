@@ -12,13 +12,11 @@ class ColumnWidget extends StatelessWidget {
       verticalDirection: VerticalDirection.up,
 
       crossAxisAlignment: CrossAxisAlignment.stretch,
-
-      
       children: [
         Box(
           color: Colors.red,
           number: 1,
-          broad: 100.0
+          broad: 100.0,
         ),
         Box(
           color: Colors.blue,
