@@ -7,15 +7,16 @@ class ListViewBuilder extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: Colors.blue,
+        title: const Text('ListViewBuilder'),
+      ),
       body: ListView.builder(
-        reverse: true, //start bottom in 1 to 12 listView
+        reverse: true,
         itemCount: listBox.length,
-        padding: const EdgeInsets.only(top: 40.0),
-
-        // --- ⬇⬇⬇ that is a function that returns a widget
         itemBuilder: (context, index) {
-          Widget element = listBox[index];
-          return element;
+          final items = listBox[index];
+          return items;
         },
       ),
     );
