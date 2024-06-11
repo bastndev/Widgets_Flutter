@@ -8,7 +8,7 @@ class ListViewBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       body: ListView.builder(
-        reverse: true,
+        reverse: true, //start bottom in 1 to 12 listView
         itemCount: listBox.length,
         padding: const EdgeInsets.only(top: 40.0),
 
