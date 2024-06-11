@@ -16,7 +16,8 @@ class ListViewCustom extends StatelessWidget {
           (BuildContext context,  int index){
             return listBox[index];
           },
-          childCount: 10,
+          // childCount: 10,
+          childCount: 5,
         ),
       ),
     );
