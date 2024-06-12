@@ -31,7 +31,7 @@ List<Widget> widgetsList(BuildContext context) {
       title: const Text('List View'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
-        Navigator.pushNamed(context, '/listView');
+        Navigator.pushNamed(context, '/practice');
       },
     ),
   ];

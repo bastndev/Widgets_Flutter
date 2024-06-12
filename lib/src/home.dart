@@ -14,8 +14,18 @@ class HomeScreen extends StatelessWidget {
           style: TextStyle(color: Colors.white),
         ),
       ),
-      body: ListView(
-        children: widgetsList(context),
+      body: ListView.separated(
+        itemCount: widgetsList(context).length,
+        separatorBuilder: (context, index) {
+          return const Divider(
+            color: Colors.black,
+            height: 1.0,
+          );
+        },
+        itemBuilder: (context, index) {
+          final widgets = widgetsList(context)[index];
+          return widgets;
+        },
       ),
     );
   }
