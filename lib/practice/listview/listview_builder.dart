@@ -8,11 +8,9 @@ class ListViewBuilder extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.blue,
-        title: const Text('ListViewBuilder'),
+        title: const Text("ListView Builder"),
       ),
       body: ListView.builder(
-        reverse: true,
         itemCount: listBox.length,
         itemBuilder: (context, index) {
           final items = listBox[index];

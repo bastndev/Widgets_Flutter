@@ -13,7 +13,8 @@ class ListViewCustom extends StatelessWidget {
       // -- -- you custom for example 10 items in list user View.custom
       body: ListView.custom(
         childrenDelegate: SliverChildBuilderDelegate(
-          (BuildContext context,  int index){
+          // los hijos se crean bajo demanda con ⬆⬆⬆⬆
+          (context, index) {
             return listBox[index];
           },
           // childCount: 10,
