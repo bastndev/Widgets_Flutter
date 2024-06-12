@@ -39,7 +39,8 @@ List<Widget> widgetsList(BuildContext context) {
       title: const Text('grid View'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
-        Navigator.pushNamed(context, '/gridView');
+        // Navigator.pushNamed(context, '/gridView');
+        Navigator.pushNamed(context, '/gridViewPr');
       },
     ),
   ];
