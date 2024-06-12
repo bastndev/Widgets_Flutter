@@ -1,10 +1,11 @@
-# Widgets de Flutter | spanish 💙
+# Widgets de Flutter | Spanish 💙
 
 Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfaces de usuario atractivas y funcionales. A continuación, se presentan algunos de los widgets más utilizados:
 
-- **CONTAINER**: Un widget versátil que se puede usar para agregar padding, márgenes, bordes y decoración a sus hijos.
-- **ROW**: Dispone a sus hijos en una fila horizontal.
-- **COLUMN**: Dispone a sus hijos en una columna vertical.
+- [x] **CONTAINER**: Un widget versátil que se puede usar para agregar padding, márgenes, bordes y decoración a sus hijos.
+- [x] **ROW**: Dispone a sus hijos en una fila horizontal.
+- [x] **COLUMN**: Dispone a sus hijos en una columna vertical.
+
 - **STACK**: Dispone a sus hijos en una pila que se apilan unos sobre otros.
 - **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
 - **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
@@ -44,3 +45,6 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - **ASPECTRATIO**: Un widget que intenta ajustar a su hijo dentro del área disponible manteniendo una relación de aspecto dada.
 - **LIMITEDBOX**: Un widget que impone restricciones máximas de ancho y alto a su hijo si no está restringido.
 - **LAYOUTBUILDER**: Un widget que se construye a sí mismo basándose en el tamaño de su padre.
+
+
+¡Espero que esto sea de ayuda! Si necesitas más cambios o ajustes, no dudes en decírmelo.
