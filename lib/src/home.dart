@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:update_flutter/src/utils/home_list_view.dart';
 
 class HomeScreen extends StatelessWidget {
   const HomeScreen({super.key});
@@ -14,40 +15,7 @@ class HomeScreen extends StatelessWidget {
         ),
       ),
       body: ListView(
-        children: [
-          ListTile(
-            leading: const Icon(Icons.star),
-            title: const Text('Column'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () {
-              Navigator.pushNamed(context, '/column');
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.star),
-            title: const Text('Row'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () {
-              Navigator.pushNamed(context, '/row');
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.star),
-            title: const Text('Stack'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () {
-              Navigator.pushNamed(context, '/stack');
-            },
-          ),
-          ListTile(
-            leading: const Icon(Icons.star),
-            title: const Text('List View'),
-            trailing: const Icon(Icons.arrow_forward_ios),
-            onTap: () {
-              Navigator.pushNamed(context, '/listView');
-            },
-          ),
-        ],
+        children: widgetsList(context),
       ),
     );
   }
