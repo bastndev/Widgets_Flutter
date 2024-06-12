@@ -6,8 +6,8 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **ROW**: Dispone a sus hijos en una fila horizontal.
 - [x] **COLUMN**: Dispone a sus hijos en una columna vertical.
 
-- **STACK**: Dispone a sus hijos en una pila que se apilan unos sobre otros.
-- **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
+- [x] **STACK**: Dispone a sus hijos en una pila que se apilan unos sobre otros.
+- [x] **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
 - **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
 - **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
 - **IMAGE**: Un widget para mostrar una imagen.
