@@ -5,6 +5,7 @@ import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
+import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
 import 'package:update_flutter/src/widgets/row.dart';
 import 'package:update_flutter/src/widgets/stack.dart';
@@ -17,5 +18,6 @@ abstract class Pages {
     Routes.stack:    (BuildContext context) => const StackWidget(),
     Routes.listView: (BuildContext context) => const ListViewWidget(),
     Routes.practice: (BuildContext context) => const Practice(),
+    Routes.gridView: (BuildContext context) => const GridViewWidget(),
   };
 }

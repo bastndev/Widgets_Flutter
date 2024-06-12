@@ -5,4 +5,5 @@ abstract class Routes {
   static const String stack = '/stack';
   static const String listView = '/listView';
   static const String practice = '/practice';
+  static const String gridView = '/gridView';
 }
