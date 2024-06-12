@@ -18,8 +18,9 @@ class HomeScreen extends StatelessWidget {
         itemCount: widgetsList(context).length,
         separatorBuilder: (context, index) {
           return const Divider(
-            color: Colors.black,
+            color: Colors.blue,
             height: 1.0,
+            thickness: 0.5,
           );
         },
         itemBuilder: (context, index) {
