@@ -93,11 +93,31 @@ List<int> intList = dynamicList.cast<int>();
 
 1. List.generate: 
 Útil para crear listas de tamaño fijo con elementos generados dinámicamente.
-
 ```
 var list = List.generate(5, (index) => index * 2); // [0, 2, 4, 6, 8]
 ```
 2. List.filled: Crea listas de tamaño fijo con un valor inicial para cada elemento.
+```
+var list = List.filled(5, 0); // [0, 0, 0, 0, 0]
+```
+3. List.unmodifiable: Crea listas inmutables
+```
+var list = List.unmodifiable([1, 2, 3, 4, 5]);
+// list.add(6); // Error: No se puede modificar una lista inmutable
+```
+4. List.empty: Crea listas vacías que pueden o no pueden crecer.
+```
+var list = List.empty(growable: true); // []
+list.add(1); // [1]
+```
+5. List.from y List.of: Crea listas a partir de otros iterables.
+```
+var anotherList = [1, 2, 3];
+var list = List.from(anotherList); // [1, 2, 3]
+```
+6. List.cast: Convierte los elementos de una lista a un tipo específico.
+```
 
+```
 
 ¡Espero que esto sea de ayuda! Si necesitas más cambios o ajustes, no dudes en decírmelo.
