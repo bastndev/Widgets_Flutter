@@ -115,9 +115,14 @@ list.add(1); // [1]
 var anotherList = [1, 2, 3];
 var list = List.from(anotherList); // [1, 2, 3]
 ```
-6. List.cast: Convierte los elementos de una lista a un tipo específico.
+6. List reduce: Reducir los elementos de una lista a un solo valor mediante una función de acumulación.
 ```
+void main() {
+  List<int> intList = [1, 2, 3, 4, 5];
+  int sum = intList.reduce((value, element) => value + element);
 
+  print(sum); // 15
+}
 ```
 
 ¡Espero que esto sea de ayuda! Si necesitas más cambios o ajustes, no dudes en decírmelo.
