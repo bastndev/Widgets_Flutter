@@ -91,7 +91,7 @@ List<int> intList = dynamicList.cast<int>();
 ```
 </details >
 
->- 1. List.generate:
+1. List.generate:
  Útil para crear listas de tamaño fijo con elementos generados dinámicamente.
 
 ```
