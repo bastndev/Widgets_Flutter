@@ -91,7 +91,7 @@ List<int> intList = dynamicList.cast<int>();
 ```
 </details >
 
-`
+```
 List.generate
 dart
 Copy code
@@ -123,5 +123,5 @@ List.empty: Crea listas vacías que pueden o no pueden crecer.
 List.from y List.of: Crea listas a partir de otros iterables.
 List.cast: Convierte los elementos de una lista a un tipo específico.
 Cada uno de estos métodos tiene sus propios casos de uso y es importante elegir el adecuado según tus necesidades específicas.
-`
+```
 ¡Espero que esto sea de ayuda! Si necesitas más cambios o ajustes, no dudes en decírmelo.
