@@ -46,9 +46,9 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - **LIMITEDBOX**: Un widget que impone restricciones máximas de ancho y alto a su hijo si no está restringido.
 - **LAYOUTBUILDER**: Un widget que se construye a sí mismo basándose en el tamaño de su padre.
 
-#Plus+
+# Plus+
 <details >
--**TYPES OF LISTS**: 
+<summary>TYPES OF LISTS</summary>
 
 >- 1. List Literal
 Puedes crear listas usando literales de lista, que es la forma más directa.
