@@ -1,6 +1,6 @@
 // pages.dart
 import 'package:flutter/material.dart';
-import 'package:update_flutter/practice/gridViewWidget/grid_view.dart';
+import 'package:update_flutter/practice/gridViewWidget/gridview.dart';
 import 'package:update_flutter/practice/practice.dart';
 import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
