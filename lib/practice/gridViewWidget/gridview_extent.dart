@@ -19,7 +19,7 @@ class GridViewExtent extends StatelessWidget {
         crossAxisSpacing: 10.0,
         mainAxisSpacing: 10.0,
         // childAspectRatio: 1/2.3,
-        childAspectRatio: 3.5/2,
+        childAspectRatio: 5/2,
         children: List.generate(9, (index) {
           return Container(
             color: Colors.pink[100 * (index % 9)],
