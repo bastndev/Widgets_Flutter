@@ -18,7 +18,7 @@ class GridViewCustom extends StatelessWidget {
           // childAspectRatio: 3 / 2,
         ),
         childrenDelegate: SliverChildBuilderDelegate(
-          (BuildContext context, int index) {
+          ( context, index) {
             return Container(
               color: Colors.purple[100 * (index % 9)],
               child: Center(

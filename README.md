@@ -8,9 +8,9 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 
 - [x] **STACK**: Dispone a sus hijos en una pila que se apilan unos sobre otros.
 - [x] **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
-- **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
-- **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
-- **IMAGE**: Un widget para mostrar una imagen.
+- [x]  **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
+- [x] **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
+- [x]**IMAGE**: Un widget para mostrar una imagen.
 - **ICON**: Un widget para mostrar un ícono.
 - **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design.
 - **APPBAR**: Un widget de barra de aplicaciones en la parte superior de una pantalla.
@@ -46,5 +46,79 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - **LIMITEDBOX**: Un widget que impone restricciones máximas de ancho y alto a su hijo si no está restringido.
 - **LAYOUTBUILDER**: Un widget que se construye a sí mismo basándose en el tamaño de su padre.
 
+#Plus+
+-**TYPES OF LISTS**: 
 
+>- 1. List Literal
+Puedes crear listas usando literales de lista, que es la forma más directa.
+```
+var list = [1, 2, 3, 4, 5];
+```
+>- 2. List.filled
+List.filled crea una lista de un tamaño específico y llena cada elemento con un valor proporcionado.
+```
+var list = List.filled(5, 0); // Crea una lista de 5 elementos, todos inicializados a 0
+```
+>- 3. List.unmodifiable
+List.unmodifiable crea una lista inmutable a partir de otra lista o iterable.
+```
+var list = List.unmodifiable([1, 2, 3, 4, 5]);
+// list.add(6); // Esto lanzaría un error porque la lista es inmutable
+```
+>- 4. List.empty
+List.empty crea una lista vacía. Puedes especificar si la lista es mutable o inmutable.
+```
+var list = List.empty(growable: true); // Crea una lista vacía que puede crecer
+```
+>- 5. List.from
+List.from crea una lista a partir de otro iterable.
+```
+var anotherList = [1, 2, 3];
+var list = List.from(anotherList);
+```
+>- 6. List.of
+List.of es similar a List.from, pero se utiliza más comúnmente para crear una lista a partir de otro iterable.
+```
+var anotherList = [1, 2, 3];
+var list = List.of(anotherList);
+```
+>- 7. List.cast
+List.cast convierte todos los elementos de una lista a un tipo específico.
+```
+List<dynamic> dynamicList = [1, 2, 3];
+List<int> intList = dynamicList.cast<int>();
+```
+`
+List.generate
+dart
+Copy code
+var list = List.generate(5, (index) => index * 2); // [0, 2, 4, 6, 8]
+List.filled
+dart
+Copy code
+var list = List.filled(5, 0); // [0, 0, 0, 0, 0]
+List.unmodifiable
+dart
+Copy code
+var list = List.unmodifiable([1, 2, 3, 4, 5]);
+// list.add(6); // Error: No se puede modificar una lista inmutable
+List.empty
+dart
+Copy code
+var list = List.empty(growable: true); // []
+list.add(1); // [1]
+List.from
+dart
+Copy code
+var anotherList = [1, 2, 3];
+var list = List.from(anotherList); // [1, 2, 3]
+Resumen
+List.generate: Útil para crear listas de tamaño fijo con elementos generados dinámicamente.
+List.filled: Crea listas de tamaño fijo con un valor inicial para cada elemento.
+List.unmodifiable: Crea listas inmutables.
+List.empty: Crea listas vacías que pueden o no pueden crecer.
+List.from y List.of: Crea listas a partir de otros iterables.
+List.cast: Convierte los elementos de una lista a un tipo específico.
+Cada uno de estos métodos tiene sus propios casos de uso y es importante elegir el adecuado según tus necesidades específicas.
+`
 ¡Espero que esto sea de ayuda! Si necesitas más cambios o ajustes, no dudes en decírmelo.
