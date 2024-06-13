@@ -31,10 +31,10 @@ var anotherList = [1, 2, 3];
 var list = List.from(anotherList); // [1, 2, 3]
 } */
 
-// --- --- -- List reduce: Reducir los elementos de una lista a un solo valor mediante una función de acumulación.
+/* // --- --- -- List reduce: Reducir los elementos de una lista a un solo valor mediante una función de acumulación.
 void main() {
   List<int> intList = [1, 2, 3, 4, 5];
   int sum = intList.reduce((value, element) => value + element);
 
   print(sum); // 15
-}
+} */
