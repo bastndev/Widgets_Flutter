@@ -35,7 +35,7 @@ List<Widget> widgetsList(BuildContext context) {
       },
     ),
     ListTile(
-      leading: const Icon(Icons.star),
+      leading: const Icon(Icons.star, color: Colors.amber,),
       title: const Text('grid View'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
