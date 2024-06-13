@@ -10,7 +10,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
 - [x]  **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
 - [x] **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
-- [x]**IMAGE**: Un widget para mostrar una imagen.
+- [x] **IMAGE**: Un widget para mostrar una imagen.
 - **ICON**: Un widget para mostrar un ícono.
 - **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design.
 - **APPBAR**: Un widget de barra de aplicaciones en la parte superior de una pantalla.
@@ -47,6 +47,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - **LAYOUTBUILDER**: Un widget que se construye a sí mismo basándose en el tamaño de su padre.
 
 #Plus+
+<details >
 -**TYPES OF LISTS**: 
 
 >- 1. List Literal
@@ -88,6 +89,8 @@ List.cast convierte todos los elementos de una lista a un tipo específico.
 List<dynamic> dynamicList = [1, 2, 3];
 List<int> intList = dynamicList.cast<int>();
 ```
+</details >
+
 `
 List.generate
 dart
