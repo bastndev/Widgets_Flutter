@@ -91,7 +91,8 @@ List<int> intList = dynamicList.cast<int>();
 ```
 </details >
 
-1. List.generate: Útil para crear listas de tamaño fijo con elementos generados dinámicamente.
+1. List.generate: 
+Útil para crear listas de tamaño fijo con elementos generados dinámicamente.
 
 ```
 var list = List.generate(5, (index) => index * 2); // [0, 2, 4, 6, 8]
