@@ -8,4 +8,5 @@ abstract class Routes {
   static const String gridView = '/gridView';
   static const String gridViewPr = '/gridViewPr';
   static const String images = '/images';
+  static const String imgHome = '/imgHome';
 }

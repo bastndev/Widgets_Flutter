@@ -1,6 +1,7 @@
 // pages.dart
 import 'package:flutter/material.dart';
 import 'package:update_flutter/practice/gridViewWidget/gridview.dart';
+import 'package:update_flutter/practice/image/img.dart';
 import 'package:update_flutter/practice/practice.dart';
 import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
@@ -23,5 +24,6 @@ abstract class Pages {
     Routes.gridView:   (BuildContext context) => const GridViewWidget(),
     Routes.gridViewPr: (BuildContext context) => const GridViewPr(),
     Routes.images: (BuildContext context) => const ImageWidget(),
+    Routes.imgHome: (BuildContext context) => const ImgHome(),
   };
 }

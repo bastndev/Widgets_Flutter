@@ -48,7 +48,7 @@ List<Widget> widgetsList(BuildContext context) {
       title: const Text('Images'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
-        Navigator.pushNamed(context, '/images');
+        Navigator.pushNamed(context, '/imgHome');
       },
     ),
   ];
