@@ -10,21 +10,8 @@ class ImageNetwork extends StatelessWidget {
         title: const Text('Image Network'),
       ),
       body: Image.network(
-        'https://picsum.photos/250?image=9',
-        loadingBuilder: (context, child, loadingProgress) {
-          if (loadingProgress == null) {
-            return child;
-          } else {
-            return const Center(
-              child: CircularProgressIndicator(),
-            );
-          }
-        },
-        errorBuilder: (context, error, stackTrace) {
-          return const Center(
-            child: Text('Error loading image'),
-          );
-        },
+        'https://i.ytimg.com/vi/3GKo2tfAUXY/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLAsARQIf89DZAD091asvcX7VCceSg',
+        fit: BoxFit.cover,
       )
     );
   }
