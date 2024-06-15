@@ -12,7 +12,7 @@ class CustomCardImage extends StatelessWidget {
           FadeInImage(
             image:
                 NetworkImage('https://avatars.githubusercontent.com/bastndev'),
-            placeholder: AssetImage('/assets/images/loading.webp'),
+            placeholder: AssetImage('assets/images/loading.webp'),
           ),
           Image(
               image: NetworkImage(
