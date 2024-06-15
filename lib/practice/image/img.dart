@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/practice/image/image_file.dart';
 import 'package:update_flutter/practice/image/image_network.dart';
+import 'package:update_flutter/practice/image/image_udemy.dart';
 
 class ImgHome extends StatelessWidget {
   const ImgHome({super.key});
@@ -24,6 +25,15 @@ class ImgHome extends StatelessWidget {
         onTap: () {
           Navigator.push(context,
               MaterialPageRoute(builder: (context) => const ImageFile()));
+        },
+      ),
+      ListTile(
+        leading: const Icon(Icons.image),
+        title: const Text('Image change purple'),
+        trailing: const Icon(Icons.arrow_forward_ios),
+        onTap: () {
+          Navigator.push(context,
+              MaterialPageRoute(builder: (context) => const ImageUdemy()));
         },
       ),
     ];
