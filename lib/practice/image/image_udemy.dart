@@ -20,6 +20,8 @@ class ImageUdemy extends StatelessWidget {
         children: const [
           CustomCard(),
           CustomCardImage(),
+          SizedBox(height: 10),
+          CustomCardImage(),
         ],
       ),
     );
