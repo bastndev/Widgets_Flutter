@@ -19,8 +19,6 @@ class ImageUdemy extends StatelessWidget {
         padding: const EdgeInsets.symmetric(horizontal: 10, vertical: 10),
         children: const [
           CustomCardImage(),
-          CustomCardImage(),
-          CustomCardImage(),
         ],
       ),
     );
