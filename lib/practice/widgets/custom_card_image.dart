@@ -1,7 +1,8 @@
 import 'package:flutter/material.dart';
 
 class CustomCardImage extends StatelessWidget {
-  const CustomCardImage({super.key});
+  final String imageUrl;
+  const CustomCardImage({super.key, required this.imageUrl});
 
   @override
   Widget build(BuildContext context) {
@@ -12,12 +13,11 @@ class CustomCardImage extends StatelessWidget {
       elevation: 10,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
-        child: const Column(
+        child:  Column(
           children: [
             FadeInImage(
-              image: NetworkImage(
-                  'https://avatars.githubusercontent.com/bastndev'),
-              placeholder: AssetImage('assets/images/shimmer.gif'),
+              image: NetworkImage(imageUrl),
+              placeholder: const AssetImage('assets/images/shimmer.gif'),
               width: double.infinity,
               height: 200,
               fit: BoxFit.cover,
