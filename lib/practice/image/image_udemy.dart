@@ -22,6 +22,8 @@ class ImageUdemy extends StatelessWidget {
           CustomCardImage(),
           SizedBox(height: 10),
           CustomCardImage(),
+          SizedBox(height: 10),
+          CustomCardImage(),
         ],
       ),
     );
