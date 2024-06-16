@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 
 class CustomCardImage extends StatelessWidget {
-  final String imageUrl;
+  final String imageUrl; //-- variable to store the image url
   const CustomCardImage({super.key, required this.imageUrl});
 
   @override
@@ -13,7 +13,7 @@ class CustomCardImage extends StatelessWidget {
       elevation: 10,
       child: ClipRRect(
         borderRadius: BorderRadius.circular(20),
-        child:  Column(
+        child: Column(
           children: [
             FadeInImage(
               image: NetworkImage(imageUrl),
