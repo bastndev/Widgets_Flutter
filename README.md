@@ -10,7 +10,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
 - [x]  **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
 - [x] **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
-- **IMAGE**: Un widget para mostrar una imagen.
+- [x] **IMAGE**: Un widget para mostrar una imagen.
 - **ICON**: Un widget para mostrar un ícono.
 - **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design.
 - **APPBAR**: Un widget de barra de aplicaciones en la parte superior de una pantalla.
