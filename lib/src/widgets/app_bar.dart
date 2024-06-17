@@ -5,9 +5,14 @@ class AppBarWidget extends StatelessWidget {
   
   @override
   Widget build(BuildContext context) {
-    return const Scaffold(
-      body: Center(
-        child: Text('AppBarWidget 22'),
+    return  Scaffold(
+      appBar: AppBar(
+        title: const Text('AppBarWidget'),
+      ),
+      body: Container(
+        child: const Center(
+          child: Text('AppBarWidget 22'),
+        ),
       ),
     );
   }

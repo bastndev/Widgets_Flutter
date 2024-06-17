@@ -2,8 +2,8 @@
 
 Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfaces de usuario atractivas y funcionales. A continuación, se presentan algunos de los widgets más utilizados:
 
-- [x] **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design.
-- [x] **CONTAINER**: Un widget versátil que se puede usar para agregar padding, márgenes, bordes y decoración a sus hijos.
+- [x] **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design. es el padre
+- [x] **CONTAINER**: Un widget versátil que se puede usar para agregar padding, márgenes, bordes y decoración a sus hijos. es como el"div".
 - [x] **APPBAR**: Un widget de barra de aplicaciones en la parte superior de una pantalla.
 - [x] **ROW**: Dispone a sus hijos en una fila horizontal.
 - [x] **COLUMN**: Dispone a sus hijos en una columna vertical.
