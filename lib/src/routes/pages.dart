@@ -8,6 +8,7 @@ import 'package:update_flutter/src/routes/routes.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
+import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
 import 'package:update_flutter/src/widgets/row.dart';
@@ -23,7 +24,8 @@ abstract class Pages {
     Routes.practice:   (BuildContext context) => const Practice(),
     Routes.gridView:   (BuildContext context) => const GridViewWidget(),
     Routes.gridViewPr: (BuildContext context) => const GridViewPr(),
-    Routes.images: (BuildContext context) => const ImageWidget(),
-    Routes.imgHome: (BuildContext context) => const ImgHome(),
+    Routes.images:     (BuildContext context) => const ImageWidget(),
+    Routes.imgHome:    (BuildContext context) => const ImgHome(),
+    Routes.iconWidget: (BuildContext context) => const IconsWidget(),
   };
 }
