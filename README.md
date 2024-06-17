@@ -2,18 +2,17 @@
 
 Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfaces de usuario atractivas y funcionales. A continuación, se presentan algunos de los widgets más utilizados:
 
+- [x] **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design.
 - [x] **CONTAINER**: Un widget versátil que se puede usar para agregar padding, márgenes, bordes y decoración a sus hijos.
+- [x] **APPBAR**: Un widget de barra de aplicaciones en la parte superior de una pantalla.
 - [x] **ROW**: Dispone a sus hijos en una fila horizontal.
 - [x] **COLUMN**: Dispone a sus hijos en una columna vertical.
-
 - [x] **STACK**: Dispone a sus hijos en una pila que se apilan unos sobre otros.
 - [x] **LISTVIEW**: Un widget que crea una lista de elementos desplazable.
 - [x]  **GRIDVIEW**: Un widget que crea una cuadrícula de elementos desplazable.
 - [x] **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
 - [x] **IMAGE**: Un widget para mostrar una imagen.
-- **ICON**: Un widget para mostrar un ícono.
-- **SCAFFOLD**: Un widget que proporciona una estructura básica de diseño visual para Material Design.
-- **APPBAR**: Un widget de barra de aplicaciones en la parte superior de una pantalla.
+- [x] **ICON**: Un widget para mostrar un ícono.
 - **DRAWER**: Un panel deslizable desde el borde de la pantalla, que suele utilizarse para la navegación.
 - **BOTTOMNAVIGATIONBAR**: Una barra de navegación que se coloca en la parte inferior de la pantalla.
 - **FLOATINGACTIONBUTTON**: Un botón circular flotante usado para acciones importantes.
