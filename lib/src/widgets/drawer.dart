@@ -8,12 +8,23 @@ class DrawerWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Drawer Widget'),
+        leading: Builder(
+          builder: (BuildContext context) {
+            return IconButton(
+              icon: const Icon(Icons.person), 
+              onPressed: () {
+                Scaffold.of(context).openDrawer();
+              },
+              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
+            );
+          },
+        ),
       ),
       drawer: Drawer(
         child: ListView(),
       ),
 
-      // --- --- --- --- --- Content here || body
+      //--- --- --- -- Content here ||  Body
       body: Center(
         child: Container(
           height: 200,
