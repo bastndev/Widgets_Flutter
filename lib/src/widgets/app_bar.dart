@@ -7,7 +7,7 @@ class AppBarWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     String text = "Widget";
-    Color color = Colors.purple.withOpacity(0.5);
+    Color color = Colors.purple.withOpacity(0.8);
 
     return Scaffold(
       backgroundColor: Colors.orange,
@@ -58,10 +58,11 @@ class AppBarWidget extends StatelessWidget {
           width: 200.0,
           height: 200.0,
           child: const Center(
-              child: Text(
-            'Tócame',
-            style: TextStyle(color: Colors.white, fontSize: 40),
-          )),
+            child: Text(
+              'Tócame',
+              style: TextStyle(color: Colors.white, fontSize: 40),
+            ),
+          ),
         ),
       )),
     );
