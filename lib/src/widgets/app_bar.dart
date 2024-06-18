@@ -6,12 +6,15 @@ class AppBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
+    // String text = "AppBar Widget";
+    // Color color = Colors.purple.withOpacity(0.5);
+
     return Scaffold(
-      backgroundColor: Colors.black,
+      backgroundColor: Colors.orange,
       appBar: AppBar(
         automaticallyImplyLeading: false,
         backgroundColor: Colors.yellow,
-        title:  Row(
+        title: Row(
           mainAxisAlignment: MainAxisAlignment.start,
           mainAxisSize: MainAxisSize.max,
           children: [
@@ -37,18 +40,30 @@ class AppBarWidget extends StatelessWidget {
         ),
       ),
       body: Center(
+          child: GestureDetector(
+        onTap: () {
+          print('Widget tocado!');
+        },
+        onDoubleTap: () {
+          print('Widget doblemente tocado!');
+        },
+        onLongPress: () {
+          print('Widget presionado largo!');
+        },
         child: Container(
-          height: 200,
-          width: 200,
-          color: Colors.red,
-          child: const Center(
-            child: Text(
-              'AppBarWidget 22',
-              style: TextStyle(color: Colors.white),
-            ),
+          decoration: BoxDecoration(
+            color: Colors.blue,
+            borderRadius: BorderRadius.circular(15.0),
           ),
+          width: 200.0,
+          height: 200.0,
+          child: const Center(
+              child: Text(
+            'Tócame',
+            style: TextStyle(color: Colors.white, fontSize: 40),
+          )),
         ),
-      ),
+      )),
     );
   }
 }
