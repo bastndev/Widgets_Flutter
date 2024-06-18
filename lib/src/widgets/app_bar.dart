@@ -6,8 +6,8 @@ class AppBarWidget extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    // String text = "AppBar Widget";
-    // Color color = Colors.purple.withOpacity(0.5);
+    String text = "Widget";
+    Color color = Colors.purple.withOpacity(0.5);
 
     return Scaffold(
       backgroundColor: Colors.orange,
@@ -42,17 +42,17 @@ class AppBarWidget extends StatelessWidget {
       body: Center(
           child: GestureDetector(
         onTap: () {
-          print('Widget tocado!');
+          print('$text tocado!');
         },
         onDoubleTap: () {
-          print('Widget doblemente tocado!');
+          print('$text doblemente tocado!');
         },
         onLongPress: () {
-          print('Widget presionado largo!');
+          print('$text presionado largo!');
         },
         child: Container(
           decoration: BoxDecoration(
-            color: Colors.blue,
+            color: color,
             borderRadius: BorderRadius.circular(15.0),
           ),
           width: 200.0,
