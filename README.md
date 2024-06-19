@@ -13,7 +13,8 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **TEXT**: Un widget para mostrar una cadena de texto con un solo estilo.
 - [x] **IMAGE**: Un widget para mostrar una imagen.
 - [x] **ICON**: Un widget para mostrar un ícono.
-- **DRAWER**: Un panel deslizable desde el borde de la pantalla, que suele utilizarse para la navegación.
+- [x] **DRAWER**: Un panel deslizable desde el borde de la pantalla, que suele utilizarse para la navegación.
+- **ALIGN**: Un widget que alinea a su hijo dentro de sí mismo y opcionalmente cambia su tamaño.
 - **BOTTOMNAVIGATIONBAR**: Una barra de navegación que se coloca en la parte inferior de la pantalla.
 - **FLOATINGACTIONBUTTON**: Un botón circular flotante usado para acciones importantes.
 - **TEXTFIELD**: Un widget que permite al usuario ingresar texto.
@@ -34,7 +35,6 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - **TOOLTIP**: Un widget que muestra un mensaje de ayuda cuando el usuario pasa el ratón por encima o mantiene presionado.
 - **PADDING**: Un widget que agrega padding a su hijo.
 - **CENTER**: Un widget que centra a su hijo dentro de sí mismo.
-- **ALIGN**: Un widget que alinea a su hijo dentro de sí mismo y opcionalmente cambia su tamaño.
 - **FRACTIONALLY SIZED BOX**: Un widget que ajusta el tamaño de su hijo a una fracción del tamaño de su padre.
 - **TABLE**: Un widget que usa una tabla para alinear a sus hijos.
 - **DRAGGABLE**: Un widget que se puede arrastrar en la interfaz de usuario.
