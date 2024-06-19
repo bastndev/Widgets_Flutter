@@ -15,6 +15,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **ICON**: Un widget para mostrar un ícono.
 - [x] **DRAWER**: Un panel deslizable desde el borde de la pantalla, que suele utilizarse para la navegación.
 - **ALIGN**: Un widget que alinea a su hijo dentro de sí mismo y opcionalmente cambia su tamaño.
+- **InkWell**: El widget que detecta los gestos táctiles y proporciona la animación de onda.
 - **BOTTOMNAVIGATIONBAR**: Una barra de navegación que se coloca en la parte inferior de la pantalla.
 - **FLOATINGACTIONBUTTON**: Un botón circular flotante usado para acciones importantes.
 - **TEXTFIELD**: Un widget que permite al usuario ingresar texto.

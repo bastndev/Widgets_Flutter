@@ -11,7 +11,7 @@ class DrawerWidget extends StatelessWidget {
         title: const Text('Drawer Widget'),
         leading: Builder(
           builder: (BuildContext context) {
-            return InkWell( //-TODO: Student later
+            return InkWell( 
               onTap: () {
                 Scaffold.of(context).openDrawer();
               },
@@ -20,9 +20,9 @@ class DrawerWidget extends StatelessWidget {
                 height: 1.0,
                 width: 121.0,
                 child: Padding(
-                  padding: const EdgeInsets.all(20.0),
+                  padding: const EdgeInsets.all(15.0),
                   child: SvgPicture.asset(
-                    'assets/images/icons/energy.svg',
+                    'assets/images/icons/user-circle.svg',
                     width: 19.0, // Set your desired width
                     height: 2.0, // Set your desired height
                     // color: Colors.blue,
