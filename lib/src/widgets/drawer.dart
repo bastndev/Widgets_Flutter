@@ -11,7 +11,7 @@ class DrawerWidget extends StatelessWidget {
         leading: Builder(
           builder: (BuildContext context) {
             return IconButton(
-              icon: const Icon(Icons.person), 
+              icon: const Icon(Icons.menu), 
               onPressed: () {
                 Scaffold.of(context).openDrawer();
               },
@@ -21,7 +21,33 @@ class DrawerWidget extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        child: ListView(),
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: <Widget>[
+            const DrawerHeader(
+              decoration: BoxDecoration(
+                image: DecorationImage(
+                  image: AssetImage('assets/images/images.jpg'),
+                  fit: BoxFit.cover,
+                ),
+                color: Colors.blue,
+              ),
+              child: Text('Drawer Header'),
+            ),
+            ListTile(
+              title: const Text('Item 1'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+            ListTile(
+              title: const Text('Item 2'),
+              onTap: () {
+                Navigator.pop(context);
+              },
+            ),
+          ],
+        ),
       ),
 
       //--- --- --- -- Content here ||  Body
