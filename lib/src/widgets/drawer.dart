@@ -8,60 +8,39 @@ class DrawerWidget extends StatelessWidget {
     return Scaffold(
       appBar: AppBar(
         title: const Text('Drawer Widget'),
-        leading: Builder(
-          builder: (BuildContext context) {
-            return IconButton(
-              icon: const Icon(Icons.menu), 
-              onPressed: () {
-                Scaffold.of(context).openDrawer();
-              },
-              tooltip: MaterialLocalizations.of(context).openAppDrawerTooltip,
-            );
-          },
-        ),
       ),
       drawer: Drawer(
         child: ListView(
-          padding: EdgeInsets.zero,
-          children: <Widget>[
-            const DrawerHeader(
-              decoration: BoxDecoration(
-                image: DecorationImage(
-                  image: AssetImage('assets/images/images.jpg'),
-                  fit: BoxFit.cover,
+          children: [
+            Align(
+              child: Padding(
+                padding: const EdgeInsets.all(1.0),
+                child: Container(
+                  decoration: BoxDecoration(
+                    color: Colors.red,
+                    borderRadius: BorderRadius.circular(50.0),
+                  ),
+                  width: 60.0,
+                  height: 60.0,
+                  child: ClipRRect(
+                    borderRadius: BorderRadius.circular(50.0),
+                    child: const Image(
+                      image: AssetImage('assets/images/model.jpg'),
+                      fit: BoxFit.cover,
+                    ),
+                  ),
                 ),
-                color: Colors.blue,
               ),
-              child: Text('Drawer Header'),
             ),
-            ListTile(
-              title: const Text('Item 1'),
-              onTap: () {
-                Navigator.pop(context);
-              },
+            const ListTile(
+              title: Text('Home'),
+              leading: Icon(Icons.home),
             ),
-            ListTile(
-              title: const Text('Item 2'),
-              onTap: () {
-                Navigator.pop(context);
-              },
+            const ListTile(
+              title: Text('Profile'),
+              leading: Icon(Icons.person),
             ),
           ],
-        ),
-      ),
-
-      //--- --- --- -- Content here ||  Body
-      body: Center(
-        child: Container(
-          height: 200,
-          width: 200,
-          decoration: BoxDecoration(
-            color: Colors.purple.withOpacity(0.8),
-            borderRadius: BorderRadius.circular(15.0),
-          ),
-          child: const Center(
-            child: Text('Body and content here !'),
-          ),
         ),
       ),
     );
