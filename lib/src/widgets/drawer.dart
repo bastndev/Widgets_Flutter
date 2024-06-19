@@ -14,18 +14,18 @@ class DrawerWidget extends StatelessWidget {
           children: [
             Align(
               child: Padding(
-                padding: const EdgeInsets.all(1.0),
+                padding:  const EdgeInsets.all(1.0),
                 child: Container(
                   decoration: BoxDecoration(
                     color: Colors.red,
-                    borderRadius: BorderRadius.circular(50.0),
+                    borderRadius: BorderRadius.circular(10.0),
                   ),
-                  width: 60.0,
-                  height: 60.0,
+                  width: 70.0,
+                  height: 70.0,
                   child: ClipRRect(
-                    borderRadius: BorderRadius.circular(50.0),
+                    borderRadius: BorderRadius.circular(10.0),
                     child: const Image(
-                      image: AssetImage('assets/images/model.jpg'),
+                      image: NetworkImage('https://avatars.githubusercontent.com/u/113950039?v=4'),
                       fit: BoxFit.cover,
                     ),
                   ),
