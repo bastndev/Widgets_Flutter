@@ -3,6 +3,7 @@ import 'package:update_flutter/practice/listview/listview.dart';
 import 'package:update_flutter/practice/listview/listview_builder.dart';
 import 'package:update_flutter/practice/listview/listview_custom.dart';
 import 'package:update_flutter/practice/listview/listview_separated.dart';
+import 'package:update_flutter/practice/widgets/drawer2_practice.dart';
 
 class Practice extends StatelessWidget {
   const Practice({super.key});
@@ -67,6 +68,19 @@ class Practice extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => const ListviewPractice(),
+                ),
+              );
+            },
+          ),
+          ListTile(
+            leading: const Icon(Icons.breakfast_dining_sharp),
+            title: const Text('Drawer Practice'),
+            trailing: const Icon(Icons.arrow_forward_ios),
+            onTap: () {
+              Navigator.push(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => const DrawerPractice(),
                 ),
               );
             },
