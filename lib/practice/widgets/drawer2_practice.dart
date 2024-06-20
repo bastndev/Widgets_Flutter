@@ -13,17 +13,19 @@ class DrawerPractice extends StatelessWidget {
         width: MediaQuery.of(context).size.width,
         child: Drawer(
           child: Container(
-            color: Colors.purple[200],
+            color: Colors.yellow[200],
             child: ListView(
               children: [
-                Padding(
-                  padding: const EdgeInsets.only(left: 20.0, top: 10.0),
-                  child: Align(
-                    alignment: Alignment
-                        .topRight, // Align the "X" icon to the top right
-                    child: IconButton(
-                      icon: const Icon(Icons.close),
-                      onPressed: () => Navigator.pop(context),
+                Container(
+                  color: Colors.blue[200], //-TODO: practice better x and picture , add email? and bitel design
+                  child: Padding(
+                    padding: const EdgeInsets.only(left: 20.0, top: 10.0),
+                    child: Align(
+                      alignment: Alignment.topRight, // Align the "X" icon to the top right
+                      child: IconButton(
+                        icon: const Icon(Icons.close),
+                        onPressed: () => Navigator.pop(context),
+                      ),
                     ),
                   ),
                 ),
@@ -51,14 +53,14 @@ class DrawerPractice extends StatelessWidget {
                           ),
                         ),
                         const SizedBox(width: 10),
-                        Padding(
-                          padding: const EdgeInsets.only(top: 40.0),
+                        const Padding(
+                          padding: EdgeInsets.only(top: 40.0),
                           child: Align(
                             alignment: Alignment.bottomLeft,
                             child: Text(
                               'Gohit Bastian',
                               style: TextStyle(
-                                color: Colors.grey[200],
+                                color: Colors.black,
                                 fontSize: 25,
                               ),
                             ),
