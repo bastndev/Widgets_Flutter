@@ -30,21 +30,29 @@ class DrawerWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(1.0),
                 child: Container(
                   decoration: BoxDecoration(
-                    color: Colors.red,
+                    color: Colors.transparent,
                     borderRadius: BorderRadius.circular(10.0),
                   ),
                   width: 70.0,
                   height: 70.0,
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
-                    child: const Image(
+                    child: const FadeInImage(
                       image: NetworkImage(
                           'https://avatars.githubusercontent.com/u/113950039?v=4'),
                       fit: BoxFit.cover,
+                      placeholder: AssetImage('assets/images/me.jpg'),
                     ),
                   ),
                 ),
               ),
+            ),
+            ListTile(
+              title: const Text('Home'),
+              leading: const Icon(Icons.home),
+              onTap: () {
+                Navigator.pushNamed(context, '/');
+              },
             ),
           ],
         ),
