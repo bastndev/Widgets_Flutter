@@ -56,9 +56,10 @@ class DrawerPractice extends StatelessWidget {
                   child: ClipRRect(
                     borderRadius: BorderRadius.circular(10.0),
                     child: const FadeInImage(
-                      image: NetworkImage('https://avatars.githubusercontent.com/u/113950039?v=4'),
+                      image: NetworkImage(
+                          'https://avatars.githubusercontent.com/u/113950039?v=4'),
                       fit: BoxFit.cover,
-                      placeholder: AssetImage('assets/images/me.jpg'),
+                      placeholder: AssetImage('assets/images/loading.webp'),
                     ),
                   ),
                 ),
