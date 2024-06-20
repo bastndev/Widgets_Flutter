@@ -23,62 +23,68 @@ class DrawerWidget extends StatelessWidget {
         ),
       ),
       drawer: Drawer(
-        child: Container(
-          color: Colors.purple[200],
-          child: ListView(
+        child: ListView(
+          padding: EdgeInsets.zero,
+          children: [
+            _buildDrawerHeader(context),
+            _buildDrawerItem(context, 'Home', Icons.home, '/'),
+            // Add more drawer items using _buildDrawerItem
+          ],
+        ),
+      ),
+    );
+  }
+
+  Widget _buildDrawerHeader(BuildContext context) {
+    return DrawerHeader(
+      decoration: BoxDecoration(
+        color: Colors.yellow[200],
+      ),
+      child: Row(
+        children: [
+          const CircleAvatar(
+            backgroundImage: NetworkImage(
+              'https://avatars.githubusercontent.com/u/113950039?v=4',
+            ),
+            backgroundColor: Colors.black12,
+          ),
+          const SizedBox(width: 10.0),
+          const Column(
+            mainAxisAlignment: MainAxisAlignment.center,
+            crossAxisAlignment: CrossAxisAlignment.start,
             children: [
-              Padding(
-                padding: const EdgeInsets.only(left: 20.0, top: 10.0),
-                child: Align(
-                  alignment: Alignment.centerLeft,
-                  child: Row(
-                    children: [
-                      Container(
-                        decoration: BoxDecoration(
-                          color: Colors.black12,
-                          borderRadius: BorderRadius.circular(10.0),
-                        ),
-                        width: 70.0,
-                        height: 70.0,
-                        child: ClipRRect(
-                          borderRadius: BorderRadius.circular(10.0),
-                          child: const FadeInImage(
-                            image: NetworkImage(
-                                'https://avatars.githubusercontent.com/u/113950039?v=4'),
-                            fit: BoxFit.cover,
-                            placeholder: AssetImage('assets/images/me.jpg'),
-                          ),
-                        ),
-                      ),
-                      const SizedBox(width: 10),
-                      Padding(
-                        padding: const EdgeInsets.only(top: 40.0),
-                        child: Align(
-                          alignment: Alignment.bottomLeft,
-                          child: Text(
-                            'Gohit Bastian',
-                            style: TextStyle(
-                              color: Colors.grey[200],
-                              fontSize: 25,
-                            ),
-                          ),
-                        ),
-                      ),
-                    ],
-                  ),
+              Text(
+                'Gohit Bastian',
+                style: TextStyle(
+                  color: Colors.black,
+                  fontSize: 25.0,
                 ),
               ),
-              ListTile(
-                title: const Text('Home'),
-                leading: const Icon(Icons.home),
-                onTap: () {
-                  Navigator.pushNamed(context, '/');
-                },
+              Text(
+                'Software Engineer',
+                style: TextStyle(
+                  color: Colors.grey,
+                  fontSize: 16.0,
+                ),
               ),
             ],
           ),
-        ),
+          const Spacer(),
+          IconButton(
+            onPressed: () => Navigator.pop(context),
+            icon: const Icon(Icons.close),
+          ),
+        ],
       ),
+    );
+  }
+
+  Widget _buildDrawerItem(
+      BuildContext context, String title, IconData icon, String route) {
+    return ListTile(
+      title: Text(title),
+      leading: Icon(icon),
+      onTap: () => Navigator.pushNamed(context, route),
     );
   }
 }
