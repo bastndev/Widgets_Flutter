@@ -12,4 +12,5 @@ abstract class Routes {
   static const String iconWidget = '/iconWidget';
   static const String appBarWidget = '/appBarWidget';
   static const String drawer = '/drawer';
+  static const String align = '/align';
 }

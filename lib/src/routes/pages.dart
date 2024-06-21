@@ -5,6 +5,7 @@ import 'package:update_flutter/practice/image/img.dart';
 import 'package:update_flutter/practice/practice.dart';
 import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
+import 'package:update_flutter/src/widgets/align.dart';
 import 'package:update_flutter/src/widgets/app_bar.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
@@ -31,5 +32,6 @@ abstract class Pages {
     Routes.iconWidget:   (BuildContext context) => const IconsWidget(),
     Routes.appBarWidget: (BuildContext context) => const AppBarWidget(),
     Routes.drawer:       (BuildContext context) => const DrawerWidget(),
+    Routes.align:        (BuildContext context) => const AlignWidget(),
   };
 }
