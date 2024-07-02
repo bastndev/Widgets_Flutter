@@ -17,8 +17,8 @@ class AlignWidget extends StatelessWidget {
                 child: CustomBox(color: Colors.red),
               ),
               Align(
-                alignment: Alignment(0, -0.5),
-                child: CustomBox(color: Colors.green),
+                alignment: Alignment(0.5, -0.5),
+                child: CustomBox(color: Colors.orange),
               ),
               Align(
                 alignment: Alignment(0, 0.5),
