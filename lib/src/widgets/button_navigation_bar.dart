@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:update_flutter/src/views/home_views.dart';
 
 class ButtonNavigationBar extends StatefulWidget {
   const ButtonNavigationBar({super.key});
@@ -13,9 +14,7 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      body: const Center(
-        child: Text('ButtonNavigationBar 1'),
-      ),
+      body: const HomeViews(),
       bottomNavigationBar: BottomNavigationBar(
         // type: BottomNavigationBarType.shifting,
         currentIndex: selectedIndex,
