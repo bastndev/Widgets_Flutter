@@ -14,19 +14,19 @@ class AlignWidget extends StatelessWidget {
           child: const Stack(
             children: [
               Align(
-                child: CustomBox(color: Colors.red),
+                child: CustomBox(color: Colors.blue),
               ),
               Align(
                 alignment: Alignment(0.5, -0.5),
                 child: CustomBox(color: Colors.orange),
               ),
               Align(
-                alignment: Alignment(0, 0.5),
+                alignment: Alignment(0, -0.5),
                 child: CustomBox(color: Colors.green),
               ),
               Align(
                 alignment: Alignment(-1, 1),
-                child: CustomBox(color: Colors.blue),
+                child: CustomBox(color: Colors.red),
               ),  
             ]
           ),
