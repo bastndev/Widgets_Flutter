@@ -7,7 +7,7 @@ import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
 import 'package:update_flutter/src/widgets/align.dart';
 import 'package:update_flutter/src/widgets/app_bar.dart';
-import 'package:update_flutter/src/widgets/button_navigation_bar.dart';
+import 'package:update_flutter/src/widgets/bottom_navigation_bar.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
