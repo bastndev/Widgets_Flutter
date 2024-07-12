@@ -1,13 +1,13 @@
 import 'package:flutter/material.dart';
 
-class HomeViews extends StatefulWidget {
-  const HomeViews({super.key});
+class PersonViews extends StatefulWidget {
+  const PersonViews({super.key});
 
   @override
-  State<HomeViews> createState() => _HomeViewsState();
+  State<PersonViews> createState() => _PersonViewsState();
 }
 
-class _HomeViewsState extends State<HomeViews> {
+class _PersonViewsState extends State<PersonViews> {
   int count = 0;
 
   @override
@@ -16,7 +16,7 @@ class _HomeViewsState extends State<HomeViews> {
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Text('Home Count: $count'),
+          Text('Person Count: $count'),
           FilledButton.tonal(
             onPressed: () {
               setState(() {

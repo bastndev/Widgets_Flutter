@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:update_flutter/src/views/home_views.dart';
+import 'package:update_flutter/src/views/person_views.dart';
 
 class ButtonNavigationBar extends StatefulWidget {
   const ButtonNavigationBar({super.key});
@@ -13,8 +14,13 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
 
   @override
   Widget build(BuildContext context) {
+    final screens = [const HomeViews(), const PersonViews()];
+
     return Scaffold(
-      body: const HomeViews(),
+      body: IndexedStack(
+        index: selectedIndex,
+        children: screens,
+      ),
       bottomNavigationBar: BottomNavigationBar(
         // type: BottomNavigationBarType.shifting,
         currentIndex: selectedIndex,
