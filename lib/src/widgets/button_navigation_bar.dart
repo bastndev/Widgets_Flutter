@@ -17,7 +17,7 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
         child: Text('ButtonNavigationBar 1'),
       ),
       bottomNavigationBar: BottomNavigationBar(
-        // type: BottomNavigationBarType.shifting, //change background
+        // type: BottomNavigationBarType.shifting,
         currentIndex: selectedIndex,
         onTap: (int index) {
           setState(() {
@@ -25,16 +25,19 @@ class _ButtonNavigationBarState extends State<ButtonNavigationBar> {
           });
         },
         elevation: 0,
+        showSelectedLabels: false,
+        showUnselectedLabels: false,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.home),
-              label: 'Home',
-              backgroundColor: Colors.blue),
+            icon: Icon(Icons.home),
+            activeIcon: Icon(Icons.home_filled, color: Colors.blue),
+            label: '',
+          ),
           BottomNavigationBarItem(
-              icon: Icon(Icons.search),
-              activeIcon: Icon(Icons.more),
-              label: 'Search',
-              backgroundColor: Colors.red),
+            icon: Icon(Icons.person),
+            activeIcon: Icon(Icons.person_2_outlined, color: Colors.red),
+            label: '',
+          ),
         ],
       ),
     );
