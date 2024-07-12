@@ -78,11 +78,19 @@ List<Widget> widgetsList(BuildContext context) {
       },
     ),
     ListTile(
-      leading: const Icon(Icons.star, color: Colors.amber),
+      leading: const Icon(Icons.star),
       title: const Text('Align'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
         Navigator.pushNamed(context, '/align');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Button Navigation Bar'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/btnNavigationBar');
       },
     ),
   ];
