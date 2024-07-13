@@ -11,6 +11,7 @@ import 'package:update_flutter/src/widgets/bottom_navigation_bar.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
+import 'package:update_flutter/src/widgets/floating_action_button.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
@@ -35,5 +36,6 @@ abstract class Pages {
     Routes.drawer:       (BuildContext context) => const DrawerWidget(),
     Routes.align:        (BuildContext context) => const AlignWidget(),
     Routes.btnNavigationBar:(BuildContext context) => const ButtonNavigationBar(),
+    Routes.btnFloating:   (BuildContext context) => const FloatingActionBtn(),
   };
 }
