@@ -20,14 +20,21 @@ class _FloatingActionBtnState extends State<FloatingActionBtn> {
       body: Center(
         child: Text('Hello Mayer! $number'),
       ),
-      floatingActionButton: FloatingActionButton(
+      floatingActionButton: FloatingActionButton.extended(
+        elevation: 0,
+        foregroundColor: Colors.white,
+        backgroundColor: Colors.red,
+        label: const Text('Add more'),
+        icon: const Icon(Icons.add),
         onPressed: () {
           setState(() {
             number++;
           });
         },
-        backgroundColor: Colors.blue,
-        child: const Icon(Icons.add),
+        shape: RoundedRectangleBorder(
+          borderRadius: BorderRadius.circular(15),
+          side: const BorderSide(color: Colors.black, width: 3),
+        ),
       ),
     );
   }
