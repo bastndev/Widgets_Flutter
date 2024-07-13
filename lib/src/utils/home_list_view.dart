@@ -94,11 +94,19 @@ List<Widget> widgetsList(BuildContext context) {
       },
     ),
     ListTile(
-      leading: const Icon(Icons.star, color: Colors.amber),
+      leading: const Icon(Icons.star),
       title: const Text('Btn Floating'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
         Navigator.pushNamed(context, '/btnFloating');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Text Field'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/textField');
       },
     ),
   ];

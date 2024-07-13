@@ -15,4 +15,5 @@ abstract class Routes {
   static const String align = '/align';
   static const String btnNavigationBar = '/btnNavigationBar';
   static const String btnFloating = '/btnFloating';
+  static const String textField = '/textField';
 }

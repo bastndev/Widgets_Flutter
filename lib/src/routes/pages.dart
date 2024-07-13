@@ -18,6 +18,7 @@ import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
 import 'package:update_flutter/src/widgets/row.dart';
 import 'package:update_flutter/src/widgets/stack.dart';
+import 'package:update_flutter/src/widgets/text_field.dart';
 
 abstract class Pages {
   static Map<String, Widget Function(BuildContext)> route = {
@@ -37,5 +38,6 @@ abstract class Pages {
     Routes.align:        (BuildContext context) => const AlignWidget(),
     Routes.btnNavigationBar:(BuildContext context) => const ButtonNavigationBar(),
     Routes.btnFloating:   (BuildContext context) => const FloatingActionBtn(),
+    Routes.textField:    (BuildContext context) => const TextFieldWidget(),
   };
 }
