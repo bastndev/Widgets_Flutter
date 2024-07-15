@@ -4,6 +4,14 @@ List<Widget> widgetsList(BuildContext context) {
   return [
     ListTile(
       leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Radio'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/radio');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star),
       title: const Text('Check box'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {

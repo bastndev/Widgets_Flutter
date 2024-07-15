@@ -17,6 +17,7 @@ import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
+import 'package:update_flutter/src/widgets/radio.dart';
 import 'package:update_flutter/src/widgets/row.dart';
 import 'package:update_flutter/src/widgets/stack.dart';
 import 'package:update_flutter/src/widgets/text_field.dart';
@@ -41,5 +42,6 @@ abstract class Pages {
     Routes.btnFloating:   (BuildContext context) => const FloatingActionBtn(),
     Routes.textField:    (BuildContext context) => const TextFieldWidget(),
     Routes.checkBox: (BuildContext context) => const CheckBoxWidget(),
+    Routes.radio: (BuildContext context) => const RadioWidget(),
   };
 }
