@@ -18,4 +18,5 @@ abstract class Routes {
   static const String textField = '/textField';
   static const String checkBox = '/checkBox';
   static const String radio = '/radio';
+  static const String switchWidget = '/switchWidget';
 }

@@ -21,7 +21,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **TEXTFIELD**: Un widget que permite al usuario ingresar texto.
 - [x] **CHECKBOX**: Un widget para la entrada de casilla de verificación.
 - [x] **RADIO**: Un widget para la entrada de botón de radio.
-- **SWITCH**: Un widget para la entrada de interruptor.
+- [x] **SWITCH**: Un widget para la entrada de interruptor.
 - **SLIDER**: Un widget para la entrada de deslizamiento.
 - **FORM**: Un contenedor para formularios que agrupa y valida múltiples widgets de entrada.
 - **ALERTDIALOG**: Un cuadro de diálogo modal que alerta al usuario sobre situaciones que requieren confirmación.
