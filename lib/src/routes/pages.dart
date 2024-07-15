@@ -8,6 +8,7 @@ import 'package:update_flutter/src/routes/routes.dart';
 import 'package:update_flutter/src/widgets/align.dart';
 import 'package:update_flutter/src/widgets/app_bar.dart';
 import 'package:update_flutter/src/widgets/bottom_navigation_bar.dart';
+import 'package:update_flutter/src/widgets/check_box.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
@@ -39,5 +40,6 @@ abstract class Pages {
     Routes.btnNavigationBar:(BuildContext context) => const ButtonNavigationBar(),
     Routes.btnFloating:   (BuildContext context) => const FloatingActionBtn(),
     Routes.textField:    (BuildContext context) => const TextFieldWidget(),
+    Routes.checkBox: (BuildContext context) => const CheckBoxWidget(),
   };
 }
