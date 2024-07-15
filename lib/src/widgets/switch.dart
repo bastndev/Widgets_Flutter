@@ -8,6 +8,8 @@ class SwitchWidget extends StatefulWidget {
 }
 
 class _SwitchWidgetState extends State<SwitchWidget> {
+  bool _isSwitched = false;
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,8 +18,15 @@ class _SwitchWidgetState extends State<SwitchWidget> {
         title: const Text('Switch Widget in Flutter'),
         centerTitle: true,
       ),
-      body: const Center(
-        child: Text('SwitchWidget'),
+      body: Center(
+        child: Switch(
+          value: _isSwitched,
+          onChanged: (value) {
+            setState(() {
+              _isSwitched = value;
+            });
+          },
+        ),
       ),
     );
   }
