@@ -14,12 +14,13 @@ class _SwitchWidgetState extends State<SwitchWidget> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: Colors.black26,
+        backgroundColor: Colors.green,
         title: const Text('Switch Widget in Flutter'),
         centerTitle: true,
       ),
       body: Center(
         child: Switch(
+          activeColor: Colors.green,
           value: _isSwitched,
           onChanged: (value) {
             setState(() {
