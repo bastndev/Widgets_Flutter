@@ -19,8 +19,8 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **BottomNavigationBar"**: Una barra de navegación que se coloca en la parte inferior de la pantalla.
 - [x] **FLOATINGACTIONBUTTON**: Un botón circular flotante usado para acciones importantes.
 - [x] **TEXTFIELD**: Un widget que permite al usuario ingresar texto.
-- **CHECKBOX**: Un widget para la entrada de casilla de verificación.
-- **RADIO**: Un widget para la entrada de botón de radio.
+- [x] **CHECKBOX**: Un widget para la entrada de casilla de verificación.
+- [x] **RADIO**: Un widget para la entrada de botón de radio.
 - **SWITCH**: Un widget para la entrada de interruptor.
 - **SLIDER**: Un widget para la entrada de deslizamiento.
 - **FORM**: Un contenedor para formularios que agrupa y valida múltiples widgets de entrada.
