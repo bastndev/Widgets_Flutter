@@ -13,6 +13,7 @@ import 'package:update_flutter/src/widgets/check_box.dart';
 import 'package:update_flutter/src/widgets/column.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
 import 'package:update_flutter/src/widgets/floating_action_button.dart';
+import 'package:update_flutter/src/widgets/form.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
@@ -47,5 +48,6 @@ abstract class Pages {
     Routes.radio: (BuildContext context) => const RadioWidget(),
     Routes.switchWidget: (BuildContext context) => const SwitchWidget(),
     Routes.sliderWidget: (BuildContext context) => const SliderWidget(),
+    Routes.formWidget: (BuildContext context) => const FormWidget(),
   };
 }
