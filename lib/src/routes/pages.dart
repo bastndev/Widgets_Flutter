@@ -19,6 +19,7 @@ import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
 import 'package:update_flutter/src/widgets/radio.dart';
 import 'package:update_flutter/src/widgets/row.dart';
+import 'package:update_flutter/src/widgets/slider.dart';
 import 'package:update_flutter/src/widgets/stack.dart';
 import 'package:update_flutter/src/widgets/switch.dart';
 import 'package:update_flutter/src/widgets/text_field.dart';
@@ -45,5 +46,6 @@ abstract class Pages {
     Routes.checkBox: (BuildContext context) => const CheckBoxWidget(),
     Routes.radio: (BuildContext context) => const RadioWidget(),
     Routes.switchWidget: (BuildContext context) => const SwitchWidget(),
+    Routes.sliderWidget: (BuildContext context) => const SliderWidget(),
   };
 }

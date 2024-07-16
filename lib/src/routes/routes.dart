@@ -19,4 +19,5 @@ abstract class Routes {
   static const String checkBox = '/checkBox';
   static const String radio = '/radio';
   static const String switchWidget = '/switchWidget';
+  static const String sliderWidget = '/sliderWidget';
 }
