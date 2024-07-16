@@ -21,4 +21,5 @@ abstract class Routes {
   static const String switchWidget = '/switchWidget';
   static const String sliderWidget = '/sliderWidget';
   static const String formWidget = '/formWidget';
+  static const String alertDialogWidget = '/alertDialogWidget';
 }

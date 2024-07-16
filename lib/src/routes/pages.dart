@@ -5,6 +5,7 @@ import 'package:update_flutter/practice/image/img.dart';
 import 'package:update_flutter/practice/practice.dart';
 import 'package:update_flutter/src/home.dart';
 import 'package:update_flutter/src/routes/routes.dart';
+import 'package:update_flutter/src/widgets/alert_dialog.dart';
 import 'package:update_flutter/src/widgets/align.dart';
 import 'package:update_flutter/src/widgets/app_bar.dart';
 import 'package:update_flutter/src/widgets/bottom_navigation_bar.dart';
@@ -49,5 +50,6 @@ abstract class Pages {
     Routes.switchWidget: (BuildContext context) => const SwitchWidget(),
     Routes.sliderWidget: (BuildContext context) => const SliderWidget(),
     Routes.formWidget: (BuildContext context) => const FormWidget(),
+    Routes.alertDialogWidget: (BuildContext context) => const AlertDialogWidget(),
   };
 }
