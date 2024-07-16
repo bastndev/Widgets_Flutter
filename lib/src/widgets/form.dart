@@ -24,6 +24,10 @@ class FormWidget extends StatelessWidget {
             child: Column(
               children: [
                 TextFormField(
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  )),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Enter something';
@@ -31,7 +35,12 @@ class FormWidget extends StatelessWidget {
                     return null;
                   },
                 ),
+                const SizedBox(height: 23),
                 TextFormField(
+                  decoration: InputDecoration(
+                      border: OutlineInputBorder(
+                    borderRadius: BorderRadius.circular(10),
+                  )),
                   validator: (value) {
                     if (value == null || value.isEmpty) {
                       return 'Enter something';
