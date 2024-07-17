@@ -19,7 +19,7 @@ import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
-import 'package:update_flutter/src/widgets/nack_bar.dart';
+import 'package:update_flutter/src/widgets/snack_bar.dart';
 import 'package:update_flutter/src/widgets/radio.dart';
 import 'package:update_flutter/src/widgets/row.dart';
 import 'package:update_flutter/src/widgets/simple_dialog.dart';
