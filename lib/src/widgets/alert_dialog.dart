@@ -20,7 +20,7 @@ class AlertDialogWidget extends StatelessWidget {
             showDialog(
               context: context,
               builder: (context) => AlertDialog(
-                backgroundColor: const Color.fromARGB(33, 89, 16, 11),
+                backgroundColor: const Color.fromARGB(32, 13, 92, 109),
                 title: const Text("Alert Dialog ⚠️"),
                 content: const Text("This is an alert dialog"),
                 actions: [

@@ -21,6 +21,7 @@ import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
 import 'package:update_flutter/src/widgets/radio.dart';
 import 'package:update_flutter/src/widgets/row.dart';
+import 'package:update_flutter/src/widgets/simple_dialog.dart';
 import 'package:update_flutter/src/widgets/slider.dart';
 import 'package:update_flutter/src/widgets/stack.dart';
 import 'package:update_flutter/src/widgets/switch.dart';
@@ -51,5 +52,6 @@ abstract class Pages {
     Routes.sliderWidget: (BuildContext context) => const SliderWidget(),
     Routes.formWidget: (BuildContext context) => const FormWidget(),
     Routes.alertDialogWidget: (BuildContext context) => const AlertDialogWidget(),
+    Routes.simpleDialogWidget: (BuildContext context) => const SimpleDialogWidget(),
   };
 }

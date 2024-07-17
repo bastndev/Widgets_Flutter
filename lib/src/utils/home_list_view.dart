@@ -4,6 +4,14 @@ List<Widget> widgetsList(BuildContext context) {
   return [
     ListTile(
       leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Simple Dialog'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/simpleDialogWidget');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star),
       title: const Text('Alert Dialog'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
