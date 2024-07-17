@@ -23,4 +23,5 @@ abstract class Routes {
   static const String formWidget = '/formWidget';
   static const String alertDialogWidget = '/alertDialogWidget';
   static const String simpleDialogWidget = '/simpleDialogWidget';
+  static const String snackBarWidget = '/snackBarWidget';
 }

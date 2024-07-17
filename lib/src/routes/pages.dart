@@ -19,6 +19,7 @@ import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
+import 'package:update_flutter/src/widgets/nack_bar.dart';
 import 'package:update_flutter/src/widgets/radio.dart';
 import 'package:update_flutter/src/widgets/row.dart';
 import 'package:update_flutter/src/widgets/simple_dialog.dart';
@@ -44,14 +45,15 @@ abstract class Pages {
     Routes.drawer:       (BuildContext context) => const DrawerWidget(),
     Routes.align:        (BuildContext context) => const AlignWidget(),
     Routes.btnNavigationBar:(BuildContext context) => const ButtonNavigationBar(),
-    Routes.btnFloating:   (BuildContext context) => const FloatingActionBtn(),
-    Routes.textField:    (BuildContext context) => const TextFieldWidget(),
-    Routes.checkBox: (BuildContext context) => const CheckBoxWidget(),
-    Routes.radio: (BuildContext context) => const RadioWidget(),
-    Routes.switchWidget: (BuildContext context) => const SwitchWidget(),
-    Routes.sliderWidget: (BuildContext context) => const SliderWidget(),
-    Routes.formWidget: (BuildContext context) => const FormWidget(),
+    Routes.btnFloating:       (BuildContext context) => const FloatingActionBtn(),
+    Routes.textField:         (BuildContext context) => const TextFieldWidget(),
+    Routes.checkBox:          (BuildContext context) => const CheckBoxWidget(),
+    Routes.radio:             (BuildContext context) => const RadioWidget(),
+    Routes.switchWidget:      (BuildContext context) => const SwitchWidget(),
+    Routes.sliderWidget:      (BuildContext context) => const SliderWidget(),
+    Routes.formWidget:        (BuildContext context) => const FormWidget(),
     Routes.alertDialogWidget: (BuildContext context) => const AlertDialogWidget(),
-    Routes.simpleDialogWidget: (BuildContext context) => const SimpleDialogWidget(),
+    Routes.simpleDialogWidget:(BuildContext context) => const SimpleDialogWidget(),
+    Routes.snackBarWidget:    (BuildContext context) => const SnackBarWidget(),
   };
 }
