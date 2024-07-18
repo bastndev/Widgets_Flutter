@@ -14,6 +14,7 @@ import 'package:update_flutter/src/widgets/circular_progress_indicator.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
+import 'package:update_flutter/src/widgets/expanded.dart';
 import 'package:update_flutter/src/widgets/floating_action_button.dart';
 import 'package:update_flutter/src/widgets/form.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
@@ -59,5 +60,6 @@ abstract class Pages {
     Routes.snackBarWidget:    (BuildContext context) => const SnackBarWidget(),
     Routes.circularProgress:    (BuildContext context) => const CircularProgressWidget(),
     Routes.linearProgress:    (BuildContext context) => const LinearProgressWidget(),
+    Routes.expandedWidget:    (BuildContext context) => const ExpandedWidget(),
   };
 }

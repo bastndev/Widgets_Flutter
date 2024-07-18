@@ -26,4 +26,5 @@ abstract class Routes {
   static const String snackBarWidget = '/snackBarWidget';
   static const String circularProgress = '/circularProgress';
   static const String linearProgress = '/linearProgress';
+  static const String expandedWidget = '/expandedWidget';
 }
