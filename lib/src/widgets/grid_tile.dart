@@ -45,3 +45,16 @@ class GridTileWidget extends StatelessWidget {
     );
   }
 }
+
+// --- --- --- -- -- GridTileBar
+
+/*  body: GridTile(
+        footer: const GridTileBar(
+          backgroundColor: Colors.black45,
+          leading: Icon(Icons.info),
+          title: Text('Title'),
+          subtitle: Text('Subtitle'),
+          trailing: Icon(Icons.more_vert),
+        ),
+        child: Image.network('https://via.placeholder.com/150'),
+      ), */
