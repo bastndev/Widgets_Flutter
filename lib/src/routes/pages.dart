@@ -19,6 +19,7 @@ import 'package:update_flutter/src/widgets/form.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
+import 'package:update_flutter/src/widgets/linear_progress_indicator.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
 import 'package:update_flutter/src/widgets/snack_bar.dart';
 import 'package:update_flutter/src/widgets/radio.dart';
@@ -57,5 +58,6 @@ abstract class Pages {
     Routes.simpleDialogWidget:(BuildContext context) => const SimpleDialogWidget(),
     Routes.snackBarWidget:    (BuildContext context) => const SnackBarWidget(),
     Routes.circularProgress:    (BuildContext context) => const CircularProgressWidget(),
+    Routes.linearProgress:    (BuildContext context) => const LinearProgressWidget(),
   };
 }

@@ -4,6 +4,14 @@ List<Widget> widgetsList(BuildContext context) {
   return [
     ListTile(
       leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Linear Progress'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/linearProgress');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star),
       title: const Text('Circular Progress'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
@@ -11,7 +19,7 @@ List<Widget> widgetsList(BuildContext context) {
       },
     ),
     ListTile(
-      leading: const Icon(Icons.star ),
+      leading: const Icon(Icons.star),
       title: const Text('SnackBar'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
