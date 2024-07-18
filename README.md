@@ -30,8 +30,8 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **CIRCULARPROGRESSINDICATOR**: Un widget que muestra un indicador circular de progreso.
 - [x] **LINEARPROGRESSINDICATOR**: Un widget que muestra un indicador lineal de progreso.
 - [x] **EXPANDED**: Un widget que expande un hijo de una fila, columna o flex para que llene el espacio disponible.
-- **FLEXIBLE**: Un widget que controla cómo un hijo de una fila, columna o flex se flexiona.
-- **CARD**: Un widget de tarjeta de Material Design.
+- [x] **FLEXIBLE**: Un widget que controla cómo un hijo de una fila, columna o flex se flexiona.
+- [x] **CARD**: Un widget de tarjeta de Material Design.
 - **GRIDTILE**: Un contenedor con una posición fija en un GridView.
 - **TOOLTIP**: Un widget que muestra un mensaje de ayuda cuando el usuario pasa el ratón por encima o mantiene presionado.
 - **PADDING**: Un widget que agrega padding a su hijo.

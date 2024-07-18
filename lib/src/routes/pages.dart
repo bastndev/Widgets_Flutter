@@ -9,6 +9,7 @@ import 'package:update_flutter/src/widgets/alert_dialog.dart';
 import 'package:update_flutter/src/widgets/align.dart';
 import 'package:update_flutter/src/widgets/app_bar.dart';
 import 'package:update_flutter/src/widgets/bottom_navigation_bar.dart';
+import 'package:update_flutter/src/widgets/card.dart';
 import 'package:update_flutter/src/widgets/check_box.dart';
 import 'package:update_flutter/src/widgets/circular_progress_indicator.dart';
 
@@ -63,5 +64,6 @@ abstract class Pages {
     Routes.linearProgress:    (BuildContext context) => const LinearProgressWidget(),
     Routes.expandedWidget:    (BuildContext context) => const ExpandedWidget(),
     Routes.flexibleWidget:    (BuildContext context) => const FlexibleWidget(),
+    Routes.cardWidget:    (BuildContext context) => const CardWidget(),
   };
 }

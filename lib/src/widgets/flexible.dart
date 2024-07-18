@@ -6,33 +6,34 @@ class FlexibleWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          title: const Text('Flexible Widget'),
-          centerTitle: true,
-        ),
-        body: Row(
-          children: <Widget>[
-            Flexible(
-              flex: 1,
-              fit: FlexFit.loose,
-              child: Container(
-                color: Colors.red,
-              ),
+      appBar: AppBar(
+        title: const Text('Flexible Widget'),
+        centerTitle: true,
+      ),
+      body: Row(
+        children: <Widget>[
+          Flexible(
+            flex: 1,
+            fit: FlexFit.loose,
+            child: Container(
+              color: Colors.red,
             ),
-            Expanded(
-              flex: 2,
-              child: Container(
-                color: Colors.green,
-              ),
+          ),
+          Expanded(
+            flex: 2,
+            child: Container(
+              color: Colors.green,
             ),
-            Flexible(
-              flex: 1,
-              fit: FlexFit.tight,
-              child: Container(
-                color: Colors.blue,
-              ),
+          ),
+          Flexible(
+            flex: 1,
+            fit: FlexFit.tight,
+            child: Container(
+              color: Colors.blue,
             ),
-          ],
-        ));
+          ),
+        ],
+      ),
+    );
   }
 }
