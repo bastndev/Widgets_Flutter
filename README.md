@@ -34,8 +34,8 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **CARD**: Un widget de tarjeta de Material Design.
 - [x] **GRIDTILE**: Un contenedor con una posición fija en un GridView.
 - [x] **TOOLTIP**: Un widget que muestra un mensaje de ayuda cuando el usuario pasa el ratón por encima o mantiene presionado.
-- [x] **PADDING**: Un widget que agrega padding dentro a su hijo.
-- [x] **MARGIN**: Un widget que agrega margen alrededor de su hijo.
+- [x] **PADDING**: Añade espacio interno entre el borde del contenedor y su contenido.
+- [x] **MARGIN**:Añade espacio externo alrededor del contenedor, separándolo de otros elementos.
 - [x] **CENTER**: Un widget que centra a su hijo dentro de sí mismo.
 - **FRACTIONALLY SIZED BOX**: Un widget que ajusta el tamaño de su hijo a una fracción del tamaño de su padre.
 - **TABLE**: Un widget que usa una tabla para alinear a sus hijos.
