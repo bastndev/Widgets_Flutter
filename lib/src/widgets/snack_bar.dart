@@ -17,7 +17,7 @@ class SnackBarWidget extends StatelessWidget {
                 padding: const EdgeInsets.all(20),
                 height: 90,
                 decoration: const BoxDecoration(
-                  color: Colors.blue,
+                  color: Color.fromARGB(166, 195, 154, 5),
                   borderRadius: BorderRadius.all(Radius.circular(14)),
                 ),
                 child: const Column(

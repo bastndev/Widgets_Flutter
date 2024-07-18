@@ -27,7 +27,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **ALERTDIALOG**: Un cuadro de diálogo modal que alerta al usuario sobre situaciones que requieren confirmación.
 - [x] **SIMPLE DIALOG**: Un cuadro de diálogo simple que presenta opciones al usuario.
 - [x] **SNACKBAR**: Un breve mensaje informativo que aparece en la parte inferior de la pantalla.
-- **CIRCULARPROGRESSINDICATOR**: Un widget que muestra un indicador circular de progreso.
+- [x] **CIRCULARPROGRESSINDICATOR**: Un widget que muestra un indicador circular de progreso.
 - **LINEARPROGRESSINDICATOR**: Un widget que muestra un indicador lineal de progreso.
 - **EXPANDED**: Un widget que expande un hijo de una fila, columna o flex para que llene el espacio disponible.
 - **FLEXIBLE**: Un widget que controla cómo un hijo de una fila, columna o flex se flexiona.
