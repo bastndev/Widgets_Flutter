@@ -29,4 +29,5 @@ abstract class Routes {
   static const String expandedWidget = '/expandedWidget';
   static const String flexibleWidget = '/flexibleWidget';
   static const String cardWidget = '/cardWidget';
+  static const String gridTile = '/gridTile';
 }

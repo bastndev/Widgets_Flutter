@@ -32,7 +32,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **EXPANDED**: Un widget que expande un hijo de una fila, columna o flex para que llene el espacio disponible.
 - [x] **FLEXIBLE**: Un widget que controla cómo un hijo de una fila, columna o flex se flexiona.
 - [x] **CARD**: Un widget de tarjeta de Material Design.
-- **GRIDTILE**: Un contenedor con una posición fija en un GridView.
+- [x] **GRIDTILE**: Un contenedor con una posición fija en un GridView.
 - **TOOLTIP**: Un widget que muestra un mensaje de ayuda cuando el usuario pasa el ratón por encima o mantiene presionado.
 - **PADDING**: Un widget que agrega padding a su hijo.
 - **CENTER**: Un widget que centra a su hijo dentro de sí mismo.
