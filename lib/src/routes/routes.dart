@@ -27,4 +27,5 @@ abstract class Routes {
   static const String circularProgress = '/circularProgress';
   static const String linearProgress = '/linearProgress';
   static const String expandedWidget = '/expandedWidget';
+  static const String flexibleWidget = '/flexibleWidget';
 }

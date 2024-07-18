@@ -6,26 +6,27 @@ class ExpandedWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-        appBar: AppBar(
-          backgroundColor: Colors.black,
-          title: const Text(
-            'ExpandedWidget',
-            style: TextStyle(color: Colors.white),
-          ),
+      appBar: AppBar(
+        backgroundColor: Colors.black,
+        title: const Text(
+          'ExpandedWidget',
+          style: TextStyle(color: Colors.white),
         ),
-        body: const Row(
-          children: [
-            Square(Colors.blue),
-            Expanded(
-              flex: 3,
-              child: Square(Colors.red),
-            ),
-            Expanded(
-              child: Square(Colors.red),
-            ),
-            Square(Colors.blue),
-          ],
-        ));
+      ),
+      body: const Row(
+        children: [
+          Square(Colors.blue),
+          Expanded(
+            flex: 3,
+            child: Square(Colors.red),
+          ),
+          Expanded(
+            child: Square(Colors.red),
+          ),
+          Square(Colors.blue),
+        ],
+      ),
+    );
   }
 }
 

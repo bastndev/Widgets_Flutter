@@ -4,6 +4,14 @@ List<Widget> widgetsList(BuildContext context) {
   return [
     ListTile(
       leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Flexible Widget'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/flexibleWidget');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star),
       title: const Text('Expanded widget'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
