@@ -33,6 +33,7 @@ import 'package:update_flutter/src/widgets/simple_dialog.dart';
 import 'package:update_flutter/src/widgets/slider.dart';
 import 'package:update_flutter/src/widgets/stack.dart';
 import 'package:update_flutter/src/widgets/switch.dart';
+import 'package:update_flutter/src/widgets/table.dart';
 import 'package:update_flutter/src/widgets/text_field.dart';
 
 abstract class Pages {
@@ -69,5 +70,6 @@ abstract class Pages {
     Routes.cardWidget:    (BuildContext context) => const CardWidget(),
     Routes.gridTile:    (BuildContext context) => const GridTileWidget(),
     Routes.fractionallyWidget:    (BuildContext context) => const FractionallyWidget(),
+    Routes.tableWidget:    (BuildContext context) => const TableWidget(),
   };
 }

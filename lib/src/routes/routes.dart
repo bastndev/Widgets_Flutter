@@ -31,4 +31,5 @@ abstract class Routes {
   static const String cardWidget = '/cardWidget';
   static const String gridTile = '/gridTile';
   static const String fractionallyWidget = '/fractionallyWidget';
+  static const String tableWidget = '/tableWidget';
 }
