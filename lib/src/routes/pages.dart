@@ -19,6 +19,7 @@ import 'package:update_flutter/src/widgets/expanded.dart';
 import 'package:update_flutter/src/widgets/flexible.dart';
 import 'package:update_flutter/src/widgets/floating_action_button.dart';
 import 'package:update_flutter/src/widgets/form.dart';
+import 'package:update_flutter/src/widgets/fractionally.dart';
 import 'package:update_flutter/src/widgets/grid_tile.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
@@ -67,5 +68,6 @@ abstract class Pages {
     Routes.flexibleWidget:    (BuildContext context) => const FlexibleWidget(),
     Routes.cardWidget:    (BuildContext context) => const CardWidget(),
     Routes.gridTile:    (BuildContext context) => const GridTileWidget(),
+    Routes.fractionallyWidget:    (BuildContext context) => const FractionallyWidget(),
   };
 }
