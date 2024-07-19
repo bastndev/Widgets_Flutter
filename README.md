@@ -37,7 +37,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **PADDING**: Añade espacio interno entre el borde del contenedor y su contenido.
 - [x] **MARGIN**:Añade espacio externo alrededor del contenedor, separándolo de otros elementos.
 - [x] **CENTER**: Un widget que centra a su hijo dentro de sí mismo.
-- **FRACTIONALLY SIZED BOX**: Un widget que ajusta el tamaño de su hijo a una fracción del tamaño de su padre.
+- [x] **FRACTIONALLY SIZED BOX**: Un widget que ajusta el tamaño de su hijo a una fracción del tamaño de su padre.
 - **TABLE**: Un widget que usa una tabla para alinear a sus hijos.
 - **DRAGGABLE**: Un widget que se puede arrastrar en la interfaz de usuario.
 - **DRAGTARGET**: Un widget que recibe datos arrastrados por un Draggable.
