@@ -14,6 +14,7 @@ import 'package:update_flutter/src/widgets/check_box.dart';
 import 'package:update_flutter/src/widgets/circular_progress_indicator.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
+import 'package:update_flutter/src/widgets/draggable.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
 import 'package:update_flutter/src/widgets/expanded.dart';
 import 'package:update_flutter/src/widgets/flexible.dart';
@@ -71,5 +72,6 @@ abstract class Pages {
     Routes.gridTile:    (BuildContext context) => const GridTileWidget(),
     Routes.fractionallyWidget:    (BuildContext context) => const FractionallyWidget(),
     Routes.tableWidget:    (BuildContext context) => const TableWidget(),
+    Routes.draggableWidget:    (BuildContext context) => const DraggableWidget(),
   };
 }
