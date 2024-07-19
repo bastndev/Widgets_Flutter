@@ -15,6 +15,26 @@ class FractionallyWidget extends StatelessWidget {
         ),
       ),
       body: Center(
+        child: Container(
+          width: 300,
+          height: 200,
+          color: Colors.orange,
+          child: FractionallySizedBox(
+            widthFactor: 1,
+            heightFactor: 0.5,
+            child: ElevatedButton(
+              onPressed: () {},
+              child: const Text('Click Me'),
+            ),
+          ),
+        ),
+      ),
+    );
+  }
+}
+
+/* 
+body: Center(
         child: FractionallySizedBox(
           widthFactor: 0.6,
           heightFactor: 0.05,
@@ -23,7 +43,4 @@ class FractionallyWidget extends StatelessWidget {
             child: const Text('Click Me'),
           )
         ),
-      )
-    );
-  }
-}
+      ) */
