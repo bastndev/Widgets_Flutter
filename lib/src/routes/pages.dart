@@ -27,6 +27,7 @@ import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
 import 'package:update_flutter/src/widgets/linear_progress_indicator.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
+import 'package:update_flutter/src/widgets/reorderable_list.dart';
 import 'package:update_flutter/src/widgets/snack_bar.dart';
 import 'package:update_flutter/src/widgets/radio.dart';
 import 'package:update_flutter/src/widgets/row.dart';
@@ -73,5 +74,6 @@ abstract class Pages {
     Routes.fractionallyWidget:    (BuildContext context) => const FractionallyWidget(),
     Routes.tableWidget:    (BuildContext context) => const TableWidget(),
     Routes.draggableWidget:    (BuildContext context) => const DraggableWidget(),
+    Routes.rdListWidget:    (BuildContext context) => const ReorderableListWidget(),
   };
 }

@@ -4,6 +4,14 @@ List<Widget> widgetsList(BuildContext context) {
   return [
     ListTile(
       leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Reorderable List'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/rdListWidget');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star),
       title: const Text('Draggable Widget'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {
