@@ -31,7 +31,7 @@ class LimitedBoxWidget extends StatelessWidget {
           scrollDirection: Axis.horizontal,
           child: LimitedBox(
             maxHeight: 50,
-            maxWidth: 300,
+            maxWidth: 320,
             child: Card(
               child: ListTile(
                 leading: Icon(
