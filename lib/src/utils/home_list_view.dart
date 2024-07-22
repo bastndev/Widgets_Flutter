@@ -4,6 +4,14 @@ List<Widget> widgetsList(BuildContext context) {
   return [
     ListTile(
       leading: const Icon(Icons.star, color: Colors.amber),
+      title: const Text('Layout Builder Widget'),
+      trailing: const Icon(Icons.arrow_forward_ios),
+      onTap: () {
+        Navigator.pushNamed(context, '/layoutWidget');
+      },
+    ),
+    ListTile(
+      leading: const Icon(Icons.star),
       title: const Text('Limited Box'),
       trailing: const Icon(Icons.arrow_forward_ios),
       onTap: () {

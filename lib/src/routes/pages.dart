@@ -27,6 +27,7 @@ import 'package:update_flutter/src/widgets/grid_tile.dart';
 import 'package:update_flutter/src/widgets/grid_view.dart';
 import 'package:update_flutter/src/widgets/icons.dart';
 import 'package:update_flutter/src/widgets/images.dart';
+import 'package:update_flutter/src/widgets/layout_builder.dart';
 import 'package:update_flutter/src/widgets/limited_box.dart';
 import 'package:update_flutter/src/widgets/linear_progress_indicator.dart';
 import 'package:update_flutter/src/widgets/list_view.dart';
@@ -81,5 +82,6 @@ abstract class Pages {
     Routes.customPageWidget:    (BuildContext context) => const CustomPageWidget(),
     Routes.aspectRatioWidget:    (BuildContext context) => const AspectRatioWidget(),
     Routes.limitedBoxWidget:    (BuildContext context) => const LimitedBoxWidget(),
+    Routes.layoutWidget:    (BuildContext context) => const LayoutBuilderWidget(),
   };
 }

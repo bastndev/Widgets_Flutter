@@ -37,4 +37,5 @@ abstract class Routes {
   static const String customPageWidget = '/customPageWidget';
   static const String aspectRatioWidget = '/aspectRatioWidget';
   static const String limitedBoxWidget = '/limitedBoxWidget';
+  static const String layoutWidget = '/layoutWidget';
 }
