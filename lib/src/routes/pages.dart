@@ -74,6 +74,6 @@ abstract class Pages {
     Routes.fractionallyWidget:    (BuildContext context) => const FractionallyWidget(),
     Routes.tableWidget:    (BuildContext context) => const TableWidget(),
     Routes.draggableWidget:    (BuildContext context) => const DraggableWidget(),
-    Routes.rdListWidget:    (BuildContext context) => const ReorderableListWidget(),
+    Routes.rdListViewWidget:    (BuildContext context) => const ReorderableListViewWidget(),
   };
 }

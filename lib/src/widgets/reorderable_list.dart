@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
 
-class ReorderableListWidget extends StatefulWidget {
-  const ReorderableListWidget({super.key});
+class ReorderableListViewWidget extends StatefulWidget {
+  const ReorderableListViewWidget({super.key});
 
   @override
-  State<ReorderableListWidget> createState() => _ReorderableListWidgetState();
+  State<ReorderableListViewWidget> createState() => _ReorderableListViewWidgetState();
 }
 
 final List<int> _items = List<int>.generate(10, (int index) => index);
 
-class _ReorderableListWidgetState extends State<ReorderableListWidget> {
+class _ReorderableListViewWidgetState extends State<ReorderableListViewWidget> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -25,6 +25,23 @@ class _ReorderableListWidgetState extends State<ReorderableListWidget> {
   }
 
   Widget content() {
-    return Container();
+    return ReorderableListView.builder(
+      itemBuilder: (content, index) {
+        return ListTile(
+          key: ValueKey(_items[index]),
+          title: Text('Item ${_items[index]}'),
+        );
+      },
+      itemCount: _items.length,
+      onReorder: (oldIndex, newIndex) {
+        setState(() {
+          if (oldIndex < newIndex) {
+            newIndex -= 1;
+          }
+          final int item = _items.removeAt(oldIndex);
+          _items.insert(newIndex, item);
+        });
+      },
+    );
   }
 }
