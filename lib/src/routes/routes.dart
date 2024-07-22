@@ -34,4 +34,5 @@ abstract class Routes {
   static const String tableWidget = '/tableWidget';
   static const String draggableWidget = '/draggableWidget';
   static const String rdListViewWidget = '/rdListViewWidget';
+  static const String customPageWidget = '/customPageWidget';
 }

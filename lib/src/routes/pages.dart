@@ -14,6 +14,7 @@ import 'package:update_flutter/src/widgets/check_box.dart';
 import 'package:update_flutter/src/widgets/circular_progress_indicator.dart';
 
 import 'package:update_flutter/src/widgets/column.dart';
+import 'package:update_flutter/src/widgets/custom_page.dart';
 import 'package:update_flutter/src/widgets/draggable.dart';
 import 'package:update_flutter/src/widgets/drawer.dart';
 import 'package:update_flutter/src/widgets/expanded.dart';
@@ -75,5 +76,6 @@ abstract class Pages {
     Routes.tableWidget:    (BuildContext context) => const TableWidget(),
     Routes.draggableWidget:    (BuildContext context) => const DraggableWidget(),
     Routes.rdListViewWidget:    (BuildContext context) => const ReorderableListViewWidget(),
+    Routes.customPageWidget:    (BuildContext context) => const CustomPageWidget(),
   };
 }
