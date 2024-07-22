@@ -8,6 +8,7 @@ import 'package:update_flutter/src/routes/routes.dart';
 import 'package:update_flutter/src/widgets/alert_dialog.dart';
 import 'package:update_flutter/src/widgets/align.dart';
 import 'package:update_flutter/src/widgets/app_bar.dart';
+import 'package:update_flutter/src/widgets/aspect_ratio.dart';
 import 'package:update_flutter/src/widgets/bottom_navigation_bar.dart';
 import 'package:update_flutter/src/widgets/card.dart';
 import 'package:update_flutter/src/widgets/check_box.dart';
@@ -77,5 +78,6 @@ abstract class Pages {
     Routes.draggableWidget:    (BuildContext context) => const DraggableWidget(),
     Routes.rdListViewWidget:    (BuildContext context) => const ReorderableListViewWidget(),
     Routes.customPageWidget:    (BuildContext context) => const CustomPageWidget(),
+    Routes.aspectRatioWidget:    (BuildContext context) => const AspectRatioWidget(),
   };
 }

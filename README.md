@@ -43,7 +43,7 @@ Flutter ofrece una amplia variedad de widgets para ayudarte a construir interfac
 - [x] **DRAGTARGET**: Un widget que recibe datos arrastrados por un Draggable.
 - [x] **REORDERABLE LISTVIEW**: Una lista de elementos que se pueden reordenar arrastrando.
 - [x] **CUSTOMPAINT**: Un widget que proporciona un área en la que se puede dibujar usando un CustomPainter.
-- **ASPECTRATIO**: Un widget que intenta ajustar a su hijo dentro del área disponible manteniendo una relación de aspecto dada.
+- [x] **ASPECTRATIO**: Un widget que intenta ajustar a su hijo dentro del área disponible manteniendo una relación de aspecto dada.
 - **LIMITEDBOX**: Un widget que impone restricciones máximas de ancho y alto a su hijo si no está restringido.
 - **LAYOUTBUILDER**: Un widget que se construye a sí mismo basándose en el tamaño de su padre.
 
